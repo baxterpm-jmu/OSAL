@@ -66,8 +66,6 @@ Regions map to folders: `Eurasia → eurasia`, `Europe → europe`, `North Afric
 
 ## The data file
 
-Everything renders from `data/sources.csv`. Adding a source is a one-line edit; no page code to touch.
-
 | Column | Notes |
 |---|---|
 | region, country, topic | topic ∈ Security / Economic / Political / Societal / General |
@@ -83,28 +81,14 @@ Everything renders from `data/sources.csv`. Adding a source is a one-line edit; 
 To add a country, add rows to the CSV, then generate its pages (copy an existing country's six `.qmd`
 files, or regenerate) and add it to the navbar/sidebar in `_quarto.yml`.
 
-## Build & preview
-
-```bash
-quarto preview      # live local server
-quarto render       # build the static site into _site/
-python tools/recompute.py   # recompute composites after editing scores
-```
-
-No Quarto installed? Open `preview/osal-preview.html` in any browser to browse all sources with
-country/topic/channel filters and sortable columns — it is fully self-contained.
-
-## Deploy to GitHub Pages
-
-Push to `main`; then in the repo set **Settings → Pages → Source → GitHub Actions**. The workflow at
-`.github/workflows/publish.yml` renders and publishes automatically.
 
 ## A note on the scores
 
 Scores are analyst judgments, not measurements — defensible and revisable. Outlets change ownership, get
 shut down, relocate, or drift; a score should move when the underlying reality does. Treat the registry
 as a living document.
+
 =======
 # OSAL
 Open-Source Analytics Laboratory @ JMU
->>>>>>> 06bff9acb9066ae58d2045453e8636bfed967b5f
+
