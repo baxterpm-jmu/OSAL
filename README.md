@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Open-Source Analysis Lab (OSAL)
 
 A curated, scored registry of in-country and expert open sources for regional and country analysis.
@@ -103,3 +104,7 @@ Push to `main`; then in the repo set **Settings → Pages → Source → GitHub 
 Scores are analyst judgments, not measurements — defensible and revisable. Outlets change ownership, get
 shut down, relocate, or drift; a score should move when the underlying reality does. Treat the registry
 as a living document.
+=======
+# OSAL
+Open-Source Analytics Laboratory @ JMU
+>>>>>>> 06bff9acb9066ae58d2045453e8636bfed967b5f
