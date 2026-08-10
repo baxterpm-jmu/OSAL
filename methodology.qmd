@@ -1,0 +1,132 @@
+---
+title: "Methodology"
+subtitle: "Inclusion criteria and the scoring rubric"
+date: today
+toc: true
+---
+
+::: {.lede}
+Scores are analyst judgments, not measurements. They are meant to be defensible, revisable, and
+consistent across the Lab — a fast read on what a source is good for, not a claim of objective truth.
+:::
+
+## What gets included
+
+A source qualifies if it delivers insight a generalist would likely miss working only in English
+from mainstream outlets. In practice that means four families of source:
+
+1. **In-country reporting** — journalists and outlets producing original material from inside the country, in the local language.
+2. **Independent investigative outlets** — including exile/diaspora newsrooms staffed by nationals of the country.
+3. **Domestic expertise** — in-country think tanks, research groups, pollsters, and named subject-matter experts.
+4. **Authoritative official records** — central banks, statistics agencies, legislatures — used for primary data and flagged as official.
+
+State-aligned and pro-war sources are admitted only when they have analytic value as the subject's
+own framing (for example, a milblogger's frontline maps). They carry an explicit perspective label.
+
+## The seven scores
+
+Each source is rated 1–5 on seven independent criteria. A source can be excellent on one and weak on
+another; that is the point of scoring them separately. The first three describe *what the source
+delivers*; the next three describe *how trustworthy and usable it is*; the last describes *how much
+interpretation it adds*.
+
+### Accuracy
+How reliably the source's factual claims hold up against later confirmation and independent checking.
+
+| Score | Meaning |
+|:--:|:--|
+| **5** | Track record of verified, independently corroborated reporting; corrections issued when wrong. |
+| **4** | Generally reliable; occasional errors, quickly corrected. |
+| **3** | Mixed; useful but requires corroboration before use. |
+| **2** | Frequently unreliable or selectively framed; use only with strong corroboration. |
+| **1** | Routinely false or fabricated; value is as a signal of intent, not fact. |
+
+### Uniqueness
+How much the source tells you that you could not readily get elsewhere.
+
+| Score | Meaning |
+|:--:|:--|
+| **5** | Original data or access available almost nowhere else. |
+| **4** | Distinctive angle or reporting that materially adds to the picture. |
+| **3** | Some original material atop widely available reporting. |
+| **2** | Mostly aggregates or restates others' work. |
+| **1** | Purely derivative. |
+
+### Timeliness
+How quickly the source publishes relative to events, and how current it stays.
+
+| Score | Meaning |
+|:--:|:--|
+| **5** | Real-time or near-real-time; often first to report. |
+| **4** | Same-day to a few days. |
+| **3** | Weekly-ish cadence; analysis over breaking news. |
+| **2** | Slow or irregular. |
+| **1** | Rarely updated / largely archival. |
+
+### Transparency & bias
+How openly the source discloses its funding, ownership, methods, and orientation — and how easy it is
+to see where it is coming from.
+
+| Score | Meaning |
+|:--:|:--|
+| **5** | Funding, ownership, and methods fully disclosed; orientation explicit. |
+| **4** | Mostly transparent; minor gaps. |
+| **3** | Partial disclosure; some digging required. |
+| **2** | Opaque funding or hidden agenda; slant must be inferred. |
+| **1** | Deliberately concealed sponsorship or deceptive framing. |
+
+### Verifiability
+Whether the source shows its work — cites primary sources, publishes data or imagery, and lets you
+check its claims independently.
+
+| Score | Meaning |
+|:--:|:--|
+| **5** | Primary sources, raw data, or imagery provided; fully reproducible. |
+| **4** | Sourcing shown for most claims. |
+| **3** | Some sourcing; much taken on trust. |
+| **2** | Assertions rarely evidenced. |
+| **1** | No sourcing; unverifiable. |
+
+### Accessibility
+How practically usable the source is: cost, language, and ease of getting the material out.
+
+| Score | Meaning |
+|:--:|:--|
+| **5** | Free, well-organized, exportable/searchable; low language barrier or translated. |
+| **4** | Free with minor friction. |
+| **3** | Partial paywall, or single-language with no translation. |
+| **2** | Hard paywall or difficult to navigate/extract. |
+| **1** | Largely closed or inaccessible without special access. |
+
+### Analytical depth
+The rigor and originality of interpretation the source adds on top of raw information. Raw-data
+sources score low here by design — that is not a demerit, just a description.
+
+| Score | Meaning |
+|:--:|:--|
+| **5** | Rigorous, original analysis that reframes the picture. |
+| **4** | Solid interpretation beyond the facts. |
+| **3** | Light analysis atop reporting. |
+| **2** | Mostly descriptive. |
+| **1** | Raw data or straight reportage; no interpretation. |
+
+### Composite
+The **composite** is the mean of the seven scores, rounded to one decimal. It is a convenience for
+sorting, not a verdict — always read the components and the note. An official statistics agency can be
+accurate and verifiable yet low on uniqueness, timeliness, and depth; an investigative outlet can be
+unique and accurate yet slow. The composite treats all seven criteria as equally weighted; weight them
+yourself for the task at hand. Because raw datasets are penalized on *depth*, do not read a lower
+composite as "worse" — read the row.
+
+## Descriptive labels (not scored)
+
+- **Source type** — what the source *is*: investigative outlet, milblogger, pollster, think tank, official agency, etc.
+- **Perspective** — orientation: *Independent*, *Independent (exile)*, *State / official*, *Pro-war / state-aligned*. This is disclosure, not a score.
+- **Language** — publication language(s); the Lab is deliberately not English-only.
+- **Channel** — *Website* (a formal, standalone outlet or organization) vs *Social media* (an individual or account published on a platform such as Telegram, Substack, or X). Filterable on every page; social accounts carry a platform tag. The distinction matters for tradecraft: an individual's channel and an institution's website warrant different handling even at the same score.
+- **Dataset flag** — marks *quantitative* sources (official statistics, polling series, order-of-battle databases, OSINT loss trackers). Flagged sources are gathered on the [Datasets](regions/eurasia/russia/datasets.qmd) shelf in addition to their topic page.
+
+## Revision
+
+Scores and inclusion are provisional. Outlets change ownership, get shut down, relocate, or drift; a
+score should move when the underlying reality does. Treat the registry as a living document.

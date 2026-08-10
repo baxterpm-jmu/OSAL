@@ -1,0 +1,2983 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Open-Source Analysis Lab"
+  description: "A curated, scored registry of in-country and expert open sources for regional analysis."
+  site-url: "https://hatterassolutions.github.io/osal/"
+  repo-url: "https://github.com/hatterassolutions/osal"
+  page-navigation: true
+  navbar:
+    background: primary
+    pinned: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Methodology"
+        href: methodology.qmd
+      - text: "Asia"
+        menu:
+          - text: "Afghanistan"
+            href: regions/asia/afghanistan/index.qmd
+          - text: "Armenia"
+            href: regions/asia/armenia/index.qmd
+          - text: "Azerbaijan"
+            href: regions/asia/azerbaijan/index.qmd
+          - text: "Bangladesh"
+            href: regions/asia/bangladesh/index.qmd
+          - text: "Bhutan"
+            href: regions/asia/bhutan/index.qmd
+          - text: "Brunei"
+            href: regions/asia/brunei/index.qmd
+          - text: "Cambodia"
+            href: regions/asia/cambodia/index.qmd
+          - text: "China"
+            href: regions/asia/china/index.qmd
+          - text: "Cyprus"
+            href: regions/asia/cyprus/index.qmd
+          - text: "Georgia"
+            href: regions/asia/georgia/index.qmd
+          - text: "India"
+            href: regions/asia/india/index.qmd
+          - text: "Indonesia"
+            href: regions/asia/indonesia/index.qmd
+          - text: "Japan"
+            href: regions/asia/japan/index.qmd
+          - text: "Kazakhstan"
+            href: regions/asia/kazakhstan/index.qmd
+          - text: "Kyrgyzstan"
+            href: regions/asia/kyrgyzstan/index.qmd
+          - text: "Laos"
+            href: regions/asia/laos/index.qmd
+          - text: "Malaysia"
+            href: regions/asia/malaysia/index.qmd
+          - text: "Maldives"
+            href: regions/asia/maldives/index.qmd
+          - text: "Mongolia"
+            href: regions/asia/mongolia/index.qmd
+          - text: "Myanmar"
+            href: regions/asia/myanmar/index.qmd
+          - text: "Nepal"
+            href: regions/asia/nepal/index.qmd
+          - text: "North Korea"
+            href: regions/asia/north-korea/index.qmd
+          - text: "Pakistan"
+            href: regions/asia/pakistan/index.qmd
+          - text: "Philippines"
+            href: regions/asia/philippines/index.qmd
+          - text: "Singapore"
+            href: regions/asia/singapore/index.qmd
+          - text: "South Korea"
+            href: regions/asia/south-korea/index.qmd
+          - text: "Sri Lanka"
+            href: regions/asia/sri-lanka/index.qmd
+          - text: "Taiwan"
+            href: regions/asia/taiwan/index.qmd
+          - text: "Tajikistan"
+            href: regions/asia/tajikistan/index.qmd
+          - text: "Thailand"
+            href: regions/asia/thailand/index.qmd
+          - text: "Timor-Leste"
+            href: regions/asia/timor-leste/index.qmd
+          - text: "Turkmenistan"
+            href: regions/asia/turkmenistan/index.qmd
+          - text: "Uzbekistan"
+            href: regions/asia/uzbekistan/index.qmd
+          - text: "Vietnam"
+            href: regions/asia/vietnam/index.qmd
+      - text: "Caribbean"
+        menu:
+          - text: "Antigua and Barbuda"
+            href: regions/caribbean/antigua-and-barbuda/index.qmd
+          - text: "Bahamas"
+            href: regions/caribbean/bahamas/index.qmd
+          - text: "Barbados"
+            href: regions/caribbean/barbados/index.qmd
+          - text: "Cuba"
+            href: regions/caribbean/cuba/index.qmd
+          - text: "Dominica"
+            href: regions/caribbean/dominica/index.qmd
+          - text: "Dominican Republic"
+            href: regions/caribbean/dominican-republic/index.qmd
+          - text: "Grenada"
+            href: regions/caribbean/grenada/index.qmd
+          - text: "Haiti"
+            href: regions/caribbean/haiti/index.qmd
+          - text: "Jamaica"
+            href: regions/caribbean/jamaica/index.qmd
+          - text: "Saint Kitts and Nevis"
+            href: regions/caribbean/saint-kitts-and-nevis/index.qmd
+          - text: "Saint Lucia"
+            href: regions/caribbean/saint-lucia/index.qmd
+          - text: "Saint Vincent and the Grenadines"
+            href: regions/caribbean/saint-vincent-and-the-grenadines/index.qmd
+          - text: "Trinidad and Tobago"
+            href: regions/caribbean/trinidad-and-tobago/index.qmd
+      - text: "Eurasia"
+        menu:
+          - text: "Russia"
+            href: regions/eurasia/russia/index.qmd
+          - text: "Ukraine"
+            href: regions/eurasia/ukraine/index.qmd
+      - text: "Europe"
+        menu:
+          - text: "Albania"
+            href: regions/europe/albania/index.qmd
+          - text: "Andorra"
+            href: regions/europe/andorra/index.qmd
+          - text: "Austria"
+            href: regions/europe/austria/index.qmd
+          - text: "Belarus"
+            href: regions/europe/belarus/index.qmd
+          - text: "Belgium"
+            href: regions/europe/belgium/index.qmd
+          - text: "Bosnia and Herzegovina"
+            href: regions/europe/bosnia-and-herzegovina/index.qmd
+          - text: "Bulgaria"
+            href: regions/europe/bulgaria/index.qmd
+          - text: "Croatia"
+            href: regions/europe/croatia/index.qmd
+          - text: "Czechia"
+            href: regions/europe/czechia/index.qmd
+          - text: "Denmark"
+            href: regions/europe/denmark/index.qmd
+          - text: "Estonia"
+            href: regions/europe/estonia/index.qmd
+          - text: "Finland"
+            href: regions/europe/finland/index.qmd
+          - text: "France"
+            href: regions/europe/france/index.qmd
+          - text: "Germany"
+            href: regions/europe/germany/index.qmd
+          - text: "Greece"
+            href: regions/europe/greece/index.qmd
+          - text: "Hungary"
+            href: regions/europe/hungary/index.qmd
+          - text: "Iceland"
+            href: regions/europe/iceland/index.qmd
+          - text: "Ireland"
+            href: regions/europe/ireland/index.qmd
+          - text: "Italy"
+            href: regions/europe/italy/index.qmd
+          - text: "Kosovo"
+            href: regions/europe/kosovo/index.qmd
+          - text: "Latvia"
+            href: regions/europe/latvia/index.qmd
+          - text: "Liechtenstein"
+            href: regions/europe/liechtenstein/index.qmd
+          - text: "Lithuania"
+            href: regions/europe/lithuania/index.qmd
+          - text: "Luxembourg"
+            href: regions/europe/luxembourg/index.qmd
+          - text: "Malta"
+            href: regions/europe/malta/index.qmd
+          - text: "Moldova"
+            href: regions/europe/moldova/index.qmd
+          - text: "Monaco"
+            href: regions/europe/monaco/index.qmd
+          - text: "Montenegro"
+            href: regions/europe/montenegro/index.qmd
+          - text: "Netherlands"
+            href: regions/europe/netherlands/index.qmd
+          - text: "North Macedonia"
+            href: regions/europe/north-macedonia/index.qmd
+          - text: "Norway"
+            href: regions/europe/norway/index.qmd
+          - text: "Poland"
+            href: regions/europe/poland/index.qmd
+          - text: "Portugal"
+            href: regions/europe/portugal/index.qmd
+          - text: "Romania"
+            href: regions/europe/romania/index.qmd
+          - text: "San Marino"
+            href: regions/europe/san-marino/index.qmd
+          - text: "Serbia"
+            href: regions/europe/serbia/index.qmd
+          - text: "Slovakia"
+            href: regions/europe/slovakia/index.qmd
+          - text: "Slovenia"
+            href: regions/europe/slovenia/index.qmd
+          - text: "Spain"
+            href: regions/europe/spain/index.qmd
+          - text: "Sweden"
+            href: regions/europe/sweden/index.qmd
+          - text: "Switzerland"
+            href: regions/europe/switzerland/index.qmd
+          - text: "United Kingdom"
+            href: regions/europe/united-kingdom/index.qmd
+      - text: "North & Central America"
+        menu:
+          - text: "Belize"
+            href: regions/north-central-america/belize/index.qmd
+          - text: "Canada"
+            href: regions/north-central-america/canada/index.qmd
+          - text: "Costa Rica"
+            href: regions/north-central-america/costa-rica/index.qmd
+          - text: "El Salvador"
+            href: regions/north-central-america/el-salvador/index.qmd
+          - text: "Guatemala"
+            href: regions/north-central-america/guatemala/index.qmd
+          - text: "Honduras"
+            href: regions/north-central-america/honduras/index.qmd
+          - text: "Mexico"
+            href: regions/north-central-america/mexico/index.qmd
+          - text: "Nicaragua"
+            href: regions/north-central-america/nicaragua/index.qmd
+          - text: "Panama"
+            href: regions/north-central-america/panama/index.qmd
+      - text: "North Africa & Middle East"
+        menu:
+          - text: "Algeria"
+            href: regions/mena/algeria/index.qmd
+          - text: "Bahrain"
+            href: regions/mena/bahrain/index.qmd
+          - text: "Egypt"
+            href: regions/mena/egypt/index.qmd
+          - text: "Iran"
+            href: regions/mena/iran/index.qmd
+          - text: "Iraq"
+            href: regions/mena/iraq/index.qmd
+          - text: "Israel"
+            href: regions/mena/israel/index.qmd
+          - text: "Jordan"
+            href: regions/mena/jordan/index.qmd
+          - text: "Kuwait"
+            href: regions/mena/kuwait/index.qmd
+          - text: "Lebanon"
+            href: regions/mena/lebanon/index.qmd
+          - text: "Libya"
+            href: regions/mena/libya/index.qmd
+          - text: "Morocco"
+            href: regions/mena/morocco/index.qmd
+          - text: "Oman"
+            href: regions/mena/oman/index.qmd
+          - text: "Palestine"
+            href: regions/mena/palestine/index.qmd
+          - text: "Qatar"
+            href: regions/mena/qatar/index.qmd
+          - text: "Saudi Arabia"
+            href: regions/mena/saudi-arabia/index.qmd
+          - text: "Syria"
+            href: regions/mena/syria/index.qmd
+          - text: "Tunisia"
+            href: regions/mena/tunisia/index.qmd
+          - text: "Turkey"
+            href: regions/mena/turkey/index.qmd
+          - text: "United Arab Emirates"
+            href: regions/mena/united-arab-emirates/index.qmd
+          - text: "Yemen"
+            href: regions/mena/yemen/index.qmd
+      - text: "Oceania"
+        menu:
+          - text: "Australia"
+            href: regions/oceania/australia/index.qmd
+          - text: "Fiji"
+            href: regions/oceania/fiji/index.qmd
+          - text: "Kiribati"
+            href: regions/oceania/kiribati/index.qmd
+          - text: "Marshall Islands"
+            href: regions/oceania/marshall-islands/index.qmd
+          - text: "Micronesia"
+            href: regions/oceania/micronesia/index.qmd
+          - text: "Nauru"
+            href: regions/oceania/nauru/index.qmd
+          - text: "New Zealand"
+            href: regions/oceania/new-zealand/index.qmd
+          - text: "Palau"
+            href: regions/oceania/palau/index.qmd
+          - text: "Papua New Guinea"
+            href: regions/oceania/papua-new-guinea/index.qmd
+          - text: "Samoa"
+            href: regions/oceania/samoa/index.qmd
+          - text: "Solomon Islands"
+            href: regions/oceania/solomon-islands/index.qmd
+          - text: "Tonga"
+            href: regions/oceania/tonga/index.qmd
+          - text: "Tuvalu"
+            href: regions/oceania/tuvalu/index.qmd
+          - text: "Vanuatu"
+            href: regions/oceania/vanuatu/index.qmd
+      - text: "South America"
+        menu:
+          - text: "Argentina"
+            href: regions/south-america/argentina/index.qmd
+          - text: "Bolivia"
+            href: regions/south-america/bolivia/index.qmd
+          - text: "Brazil"
+            href: regions/south-america/brazil/index.qmd
+          - text: "Chile"
+            href: regions/south-america/chile/index.qmd
+          - text: "Colombia"
+            href: regions/south-america/colombia/index.qmd
+          - text: "Ecuador"
+            href: regions/south-america/ecuador/index.qmd
+          - text: "Guyana"
+            href: regions/south-america/guyana/index.qmd
+          - text: "Paraguay"
+            href: regions/south-america/paraguay/index.qmd
+          - text: "Peru"
+            href: regions/south-america/peru/index.qmd
+          - text: "Suriname"
+            href: regions/south-america/suriname/index.qmd
+          - text: "Uruguay"
+            href: regions/south-america/uruguay/index.qmd
+          - text: "Venezuela"
+            href: regions/south-america/venezuela/index.qmd
+      - text: "Sub-Saharan Africa"
+        menu:
+          - text: "Angola"
+            href: regions/sub-saharan-africa/angola/index.qmd
+          - text: "Benin"
+            href: regions/sub-saharan-africa/benin/index.qmd
+          - text: "Botswana"
+            href: regions/sub-saharan-africa/botswana/index.qmd
+          - text: "Burkina Faso"
+            href: regions/sub-saharan-africa/burkina-faso/index.qmd
+          - text: "Burundi"
+            href: regions/sub-saharan-africa/burundi/index.qmd
+          - text: "Cameroon"
+            href: regions/sub-saharan-africa/cameroon/index.qmd
+          - text: "Cape Verde"
+            href: regions/sub-saharan-africa/cape-verde/index.qmd
+          - text: "Central African Republic"
+            href: regions/sub-saharan-africa/central-african-republic/index.qmd
+          - text: "Chad"
+            href: regions/sub-saharan-africa/chad/index.qmd
+          - text: "Comoros"
+            href: regions/sub-saharan-africa/comoros/index.qmd
+          - text: "Congo (Brazzaville)"
+            href: regions/sub-saharan-africa/congo-brazzaville/index.qmd
+          - text: "Côte d'Ivoire"
+            href: regions/sub-saharan-africa/cote-divoire/index.qmd
+          - text: "DR Congo"
+            href: regions/sub-saharan-africa/dr-congo/index.qmd
+          - text: "Djibouti"
+            href: regions/sub-saharan-africa/djibouti/index.qmd
+          - text: "Equatorial Guinea"
+            href: regions/sub-saharan-africa/equatorial-guinea/index.qmd
+          - text: "Eritrea"
+            href: regions/sub-saharan-africa/eritrea/index.qmd
+          - text: "Eswatini"
+            href: regions/sub-saharan-africa/eswatini/index.qmd
+          - text: "Ethiopia"
+            href: regions/sub-saharan-africa/ethiopia/index.qmd
+          - text: "Gabon"
+            href: regions/sub-saharan-africa/gabon/index.qmd
+          - text: "Gambia"
+            href: regions/sub-saharan-africa/gambia/index.qmd
+          - text: "Ghana"
+            href: regions/sub-saharan-africa/ghana/index.qmd
+          - text: "Guinea"
+            href: regions/sub-saharan-africa/guinea/index.qmd
+          - text: "Guinea-Bissau"
+            href: regions/sub-saharan-africa/guinea-bissau/index.qmd
+          - text: "Kenya"
+            href: regions/sub-saharan-africa/kenya/index.qmd
+          - text: "Lesotho"
+            href: regions/sub-saharan-africa/lesotho/index.qmd
+          - text: "Liberia"
+            href: regions/sub-saharan-africa/liberia/index.qmd
+          - text: "Madagascar"
+            href: regions/sub-saharan-africa/madagascar/index.qmd
+          - text: "Malawi"
+            href: regions/sub-saharan-africa/malawi/index.qmd
+          - text: "Mali"
+            href: regions/sub-saharan-africa/mali/index.qmd
+          - text: "Mauritania"
+            href: regions/sub-saharan-africa/mauritania/index.qmd
+          - text: "Mauritius"
+            href: regions/sub-saharan-africa/mauritius/index.qmd
+          - text: "Mozambique"
+            href: regions/sub-saharan-africa/mozambique/index.qmd
+          - text: "Namibia"
+            href: regions/sub-saharan-africa/namibia/index.qmd
+          - text: "Niger"
+            href: regions/sub-saharan-africa/niger/index.qmd
+          - text: "Nigeria"
+            href: regions/sub-saharan-africa/nigeria/index.qmd
+          - text: "Rwanda"
+            href: regions/sub-saharan-africa/rwanda/index.qmd
+          - text: "Senegal"
+            href: regions/sub-saharan-africa/senegal/index.qmd
+          - text: "Seychelles"
+            href: regions/sub-saharan-africa/seychelles/index.qmd
+          - text: "Sierra Leone"
+            href: regions/sub-saharan-africa/sierra-leone/index.qmd
+          - text: "Somalia"
+            href: regions/sub-saharan-africa/somalia/index.qmd
+          - text: "South Africa"
+            href: regions/sub-saharan-africa/south-africa/index.qmd
+          - text: "South Sudan"
+            href: regions/sub-saharan-africa/south-sudan/index.qmd
+          - text: "Sudan"
+            href: regions/sub-saharan-africa/sudan/index.qmd
+          - text: "São Tomé and Príncipe"
+            href: regions/sub-saharan-africa/sao-tome-and-principe/index.qmd
+          - text: "Tanzania"
+            href: regions/sub-saharan-africa/tanzania/index.qmd
+          - text: "Togo"
+            href: regions/sub-saharan-africa/togo/index.qmd
+          - text: "Uganda"
+            href: regions/sub-saharan-africa/uganda/index.qmd
+          - text: "Zambia"
+            href: regions/sub-saharan-africa/zambia/index.qmd
+          - text: "Zimbabwe"
+            href: regions/sub-saharan-africa/zimbabwe/index.qmd
+    right:
+      - icon: github
+        href: "https://github.com/hatterassolutions/osal"
+        aria-label: GitHub
+  sidebar:
+    - title: "Afghanistan"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/afghanistan/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/afghanistan/security.qmd
+            - regions/asia/afghanistan/economic.qmd
+            - regions/asia/afghanistan/political.qmd
+            - regions/asia/afghanistan/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/afghanistan/datasets.qmd
+    - title: "Armenia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/armenia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/armenia/security.qmd
+            - regions/asia/armenia/economic.qmd
+            - regions/asia/armenia/political.qmd
+            - regions/asia/armenia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/armenia/datasets.qmd
+    - title: "Azerbaijan"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/azerbaijan/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/azerbaijan/security.qmd
+            - regions/asia/azerbaijan/economic.qmd
+            - regions/asia/azerbaijan/political.qmd
+            - regions/asia/azerbaijan/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/azerbaijan/datasets.qmd
+    - title: "Bangladesh"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/bangladesh/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/bangladesh/security.qmd
+            - regions/asia/bangladesh/economic.qmd
+            - regions/asia/bangladesh/political.qmd
+            - regions/asia/bangladesh/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/bangladesh/datasets.qmd
+    - title: "Bhutan"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/bhutan/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/bhutan/security.qmd
+            - regions/asia/bhutan/economic.qmd
+            - regions/asia/bhutan/political.qmd
+            - regions/asia/bhutan/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/bhutan/datasets.qmd
+    - title: "Brunei"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/brunei/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/brunei/security.qmd
+            - regions/asia/brunei/economic.qmd
+            - regions/asia/brunei/political.qmd
+            - regions/asia/brunei/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/brunei/datasets.qmd
+    - title: "Cambodia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/cambodia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/cambodia/security.qmd
+            - regions/asia/cambodia/economic.qmd
+            - regions/asia/cambodia/political.qmd
+            - regions/asia/cambodia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/cambodia/datasets.qmd
+    - title: "China"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/china/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/china/security.qmd
+            - regions/asia/china/economic.qmd
+            - regions/asia/china/political.qmd
+            - regions/asia/china/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/china/datasets.qmd
+    - title: "Cyprus"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/cyprus/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/cyprus/security.qmd
+            - regions/asia/cyprus/economic.qmd
+            - regions/asia/cyprus/political.qmd
+            - regions/asia/cyprus/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/cyprus/datasets.qmd
+    - title: "Georgia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/georgia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/georgia/security.qmd
+            - regions/asia/georgia/economic.qmd
+            - regions/asia/georgia/political.qmd
+            - regions/asia/georgia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/georgia/datasets.qmd
+    - title: "India"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/india/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/india/security.qmd
+            - regions/asia/india/economic.qmd
+            - regions/asia/india/political.qmd
+            - regions/asia/india/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/india/datasets.qmd
+    - title: "Indonesia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/indonesia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/indonesia/security.qmd
+            - regions/asia/indonesia/economic.qmd
+            - regions/asia/indonesia/political.qmd
+            - regions/asia/indonesia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/indonesia/datasets.qmd
+    - title: "Japan"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/japan/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/japan/security.qmd
+            - regions/asia/japan/economic.qmd
+            - regions/asia/japan/political.qmd
+            - regions/asia/japan/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/japan/datasets.qmd
+    - title: "Kazakhstan"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/kazakhstan/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/kazakhstan/security.qmd
+            - regions/asia/kazakhstan/economic.qmd
+            - regions/asia/kazakhstan/political.qmd
+            - regions/asia/kazakhstan/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/kazakhstan/datasets.qmd
+    - title: "Kyrgyzstan"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/kyrgyzstan/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/kyrgyzstan/security.qmd
+            - regions/asia/kyrgyzstan/economic.qmd
+            - regions/asia/kyrgyzstan/political.qmd
+            - regions/asia/kyrgyzstan/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/kyrgyzstan/datasets.qmd
+    - title: "Laos"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/laos/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/laos/security.qmd
+            - regions/asia/laos/economic.qmd
+            - regions/asia/laos/political.qmd
+            - regions/asia/laos/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/laos/datasets.qmd
+    - title: "Malaysia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/malaysia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/malaysia/security.qmd
+            - regions/asia/malaysia/economic.qmd
+            - regions/asia/malaysia/political.qmd
+            - regions/asia/malaysia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/malaysia/datasets.qmd
+    - title: "Maldives"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/maldives/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/maldives/security.qmd
+            - regions/asia/maldives/economic.qmd
+            - regions/asia/maldives/political.qmd
+            - regions/asia/maldives/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/maldives/datasets.qmd
+    - title: "Mongolia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/mongolia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/mongolia/security.qmd
+            - regions/asia/mongolia/economic.qmd
+            - regions/asia/mongolia/political.qmd
+            - regions/asia/mongolia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/mongolia/datasets.qmd
+    - title: "Myanmar"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/myanmar/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/myanmar/security.qmd
+            - regions/asia/myanmar/economic.qmd
+            - regions/asia/myanmar/political.qmd
+            - regions/asia/myanmar/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/myanmar/datasets.qmd
+    - title: "Nepal"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/nepal/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/nepal/security.qmd
+            - regions/asia/nepal/economic.qmd
+            - regions/asia/nepal/political.qmd
+            - regions/asia/nepal/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/nepal/datasets.qmd
+    - title: "North Korea"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/north-korea/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/north-korea/security.qmd
+            - regions/asia/north-korea/economic.qmd
+            - regions/asia/north-korea/political.qmd
+            - regions/asia/north-korea/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/north-korea/datasets.qmd
+    - title: "Pakistan"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/pakistan/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/pakistan/security.qmd
+            - regions/asia/pakistan/economic.qmd
+            - regions/asia/pakistan/political.qmd
+            - regions/asia/pakistan/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/pakistan/datasets.qmd
+    - title: "Philippines"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/philippines/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/philippines/security.qmd
+            - regions/asia/philippines/economic.qmd
+            - regions/asia/philippines/political.qmd
+            - regions/asia/philippines/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/philippines/datasets.qmd
+    - title: "Singapore"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/singapore/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/singapore/security.qmd
+            - regions/asia/singapore/economic.qmd
+            - regions/asia/singapore/political.qmd
+            - regions/asia/singapore/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/singapore/datasets.qmd
+    - title: "South Korea"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/south-korea/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/south-korea/security.qmd
+            - regions/asia/south-korea/economic.qmd
+            - regions/asia/south-korea/political.qmd
+            - regions/asia/south-korea/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/south-korea/datasets.qmd
+    - title: "Sri Lanka"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/sri-lanka/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/sri-lanka/security.qmd
+            - regions/asia/sri-lanka/economic.qmd
+            - regions/asia/sri-lanka/political.qmd
+            - regions/asia/sri-lanka/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/sri-lanka/datasets.qmd
+    - title: "Taiwan"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/taiwan/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/taiwan/security.qmd
+            - regions/asia/taiwan/economic.qmd
+            - regions/asia/taiwan/political.qmd
+            - regions/asia/taiwan/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/taiwan/datasets.qmd
+    - title: "Tajikistan"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/tajikistan/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/tajikistan/security.qmd
+            - regions/asia/tajikistan/economic.qmd
+            - regions/asia/tajikistan/political.qmd
+            - regions/asia/tajikistan/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/tajikistan/datasets.qmd
+    - title: "Thailand"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/thailand/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/thailand/security.qmd
+            - regions/asia/thailand/economic.qmd
+            - regions/asia/thailand/political.qmd
+            - regions/asia/thailand/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/thailand/datasets.qmd
+    - title: "Timor-Leste"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/timor-leste/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/timor-leste/security.qmd
+            - regions/asia/timor-leste/economic.qmd
+            - regions/asia/timor-leste/political.qmd
+            - regions/asia/timor-leste/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/timor-leste/datasets.qmd
+    - title: "Turkmenistan"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/turkmenistan/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/turkmenistan/security.qmd
+            - regions/asia/turkmenistan/economic.qmd
+            - regions/asia/turkmenistan/political.qmd
+            - regions/asia/turkmenistan/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/turkmenistan/datasets.qmd
+    - title: "Uzbekistan"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/uzbekistan/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/uzbekistan/security.qmd
+            - regions/asia/uzbekistan/economic.qmd
+            - regions/asia/uzbekistan/political.qmd
+            - regions/asia/uzbekistan/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/uzbekistan/datasets.qmd
+    - title: "Vietnam"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/asia/vietnam/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/asia/vietnam/security.qmd
+            - regions/asia/vietnam/economic.qmd
+            - regions/asia/vietnam/political.qmd
+            - regions/asia/vietnam/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/asia/vietnam/datasets.qmd
+    - title: "Antigua and Barbuda"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/caribbean/antigua-and-barbuda/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/caribbean/antigua-and-barbuda/security.qmd
+            - regions/caribbean/antigua-and-barbuda/economic.qmd
+            - regions/caribbean/antigua-and-barbuda/political.qmd
+            - regions/caribbean/antigua-and-barbuda/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/caribbean/antigua-and-barbuda/datasets.qmd
+    - title: "Bahamas"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/caribbean/bahamas/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/caribbean/bahamas/security.qmd
+            - regions/caribbean/bahamas/economic.qmd
+            - regions/caribbean/bahamas/political.qmd
+            - regions/caribbean/bahamas/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/caribbean/bahamas/datasets.qmd
+    - title: "Barbados"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/caribbean/barbados/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/caribbean/barbados/security.qmd
+            - regions/caribbean/barbados/economic.qmd
+            - regions/caribbean/barbados/political.qmd
+            - regions/caribbean/barbados/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/caribbean/barbados/datasets.qmd
+    - title: "Cuba"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/caribbean/cuba/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/caribbean/cuba/security.qmd
+            - regions/caribbean/cuba/economic.qmd
+            - regions/caribbean/cuba/political.qmd
+            - regions/caribbean/cuba/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/caribbean/cuba/datasets.qmd
+    - title: "Dominica"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/caribbean/dominica/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/caribbean/dominica/security.qmd
+            - regions/caribbean/dominica/economic.qmd
+            - regions/caribbean/dominica/political.qmd
+            - regions/caribbean/dominica/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/caribbean/dominica/datasets.qmd
+    - title: "Dominican Republic"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/caribbean/dominican-republic/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/caribbean/dominican-republic/security.qmd
+            - regions/caribbean/dominican-republic/economic.qmd
+            - regions/caribbean/dominican-republic/political.qmd
+            - regions/caribbean/dominican-republic/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/caribbean/dominican-republic/datasets.qmd
+    - title: "Grenada"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/caribbean/grenada/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/caribbean/grenada/security.qmd
+            - regions/caribbean/grenada/economic.qmd
+            - regions/caribbean/grenada/political.qmd
+            - regions/caribbean/grenada/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/caribbean/grenada/datasets.qmd
+    - title: "Haiti"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/caribbean/haiti/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/caribbean/haiti/security.qmd
+            - regions/caribbean/haiti/economic.qmd
+            - regions/caribbean/haiti/political.qmd
+            - regions/caribbean/haiti/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/caribbean/haiti/datasets.qmd
+    - title: "Jamaica"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/caribbean/jamaica/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/caribbean/jamaica/security.qmd
+            - regions/caribbean/jamaica/economic.qmd
+            - regions/caribbean/jamaica/political.qmd
+            - regions/caribbean/jamaica/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/caribbean/jamaica/datasets.qmd
+    - title: "Saint Kitts and Nevis"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/caribbean/saint-kitts-and-nevis/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/caribbean/saint-kitts-and-nevis/security.qmd
+            - regions/caribbean/saint-kitts-and-nevis/economic.qmd
+            - regions/caribbean/saint-kitts-and-nevis/political.qmd
+            - regions/caribbean/saint-kitts-and-nevis/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/caribbean/saint-kitts-and-nevis/datasets.qmd
+    - title: "Saint Lucia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/caribbean/saint-lucia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/caribbean/saint-lucia/security.qmd
+            - regions/caribbean/saint-lucia/economic.qmd
+            - regions/caribbean/saint-lucia/political.qmd
+            - regions/caribbean/saint-lucia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/caribbean/saint-lucia/datasets.qmd
+    - title: "Saint Vincent and the Grenadines"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/caribbean/saint-vincent-and-the-grenadines/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/caribbean/saint-vincent-and-the-grenadines/security.qmd
+            - regions/caribbean/saint-vincent-and-the-grenadines/economic.qmd
+            - regions/caribbean/saint-vincent-and-the-grenadines/political.qmd
+            - regions/caribbean/saint-vincent-and-the-grenadines/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/caribbean/saint-vincent-and-the-grenadines/datasets.qmd
+    - title: "Trinidad and Tobago"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/caribbean/trinidad-and-tobago/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/caribbean/trinidad-and-tobago/security.qmd
+            - regions/caribbean/trinidad-and-tobago/economic.qmd
+            - regions/caribbean/trinidad-and-tobago/political.qmd
+            - regions/caribbean/trinidad-and-tobago/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/caribbean/trinidad-and-tobago/datasets.qmd
+    - title: "Russia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/eurasia/russia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/eurasia/russia/security.qmd
+            - regions/eurasia/russia/economic.qmd
+            - regions/eurasia/russia/political.qmd
+            - regions/eurasia/russia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/eurasia/russia/datasets.qmd
+    - title: "Ukraine"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/eurasia/ukraine/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/eurasia/ukraine/security.qmd
+            - regions/eurasia/ukraine/economic.qmd
+            - regions/eurasia/ukraine/political.qmd
+            - regions/eurasia/ukraine/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/eurasia/ukraine/datasets.qmd
+    - title: "Albania"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/albania/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/albania/security.qmd
+            - regions/europe/albania/economic.qmd
+            - regions/europe/albania/political.qmd
+            - regions/europe/albania/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/albania/datasets.qmd
+    - title: "Andorra"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/andorra/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/andorra/security.qmd
+            - regions/europe/andorra/economic.qmd
+            - regions/europe/andorra/political.qmd
+            - regions/europe/andorra/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/andorra/datasets.qmd
+    - title: "Austria"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/austria/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/austria/security.qmd
+            - regions/europe/austria/economic.qmd
+            - regions/europe/austria/political.qmd
+            - regions/europe/austria/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/austria/datasets.qmd
+    - title: "Belarus"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/belarus/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/belarus/security.qmd
+            - regions/europe/belarus/economic.qmd
+            - regions/europe/belarus/political.qmd
+            - regions/europe/belarus/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/belarus/datasets.qmd
+    - title: "Belgium"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/belgium/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/belgium/security.qmd
+            - regions/europe/belgium/economic.qmd
+            - regions/europe/belgium/political.qmd
+            - regions/europe/belgium/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/belgium/datasets.qmd
+    - title: "Bosnia and Herzegovina"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/bosnia-and-herzegovina/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/bosnia-and-herzegovina/security.qmd
+            - regions/europe/bosnia-and-herzegovina/economic.qmd
+            - regions/europe/bosnia-and-herzegovina/political.qmd
+            - regions/europe/bosnia-and-herzegovina/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/bosnia-and-herzegovina/datasets.qmd
+    - title: "Bulgaria"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/bulgaria/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/bulgaria/security.qmd
+            - regions/europe/bulgaria/economic.qmd
+            - regions/europe/bulgaria/political.qmd
+            - regions/europe/bulgaria/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/bulgaria/datasets.qmd
+    - title: "Croatia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/croatia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/croatia/security.qmd
+            - regions/europe/croatia/economic.qmd
+            - regions/europe/croatia/political.qmd
+            - regions/europe/croatia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/croatia/datasets.qmd
+    - title: "Czechia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/czechia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/czechia/security.qmd
+            - regions/europe/czechia/economic.qmd
+            - regions/europe/czechia/political.qmd
+            - regions/europe/czechia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/czechia/datasets.qmd
+    - title: "Denmark"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/denmark/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/denmark/security.qmd
+            - regions/europe/denmark/economic.qmd
+            - regions/europe/denmark/political.qmd
+            - regions/europe/denmark/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/denmark/datasets.qmd
+    - title: "Estonia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/estonia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/estonia/security.qmd
+            - regions/europe/estonia/economic.qmd
+            - regions/europe/estonia/political.qmd
+            - regions/europe/estonia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/estonia/datasets.qmd
+    - title: "Finland"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/finland/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/finland/security.qmd
+            - regions/europe/finland/economic.qmd
+            - regions/europe/finland/political.qmd
+            - regions/europe/finland/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/finland/datasets.qmd
+    - title: "France"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/france/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/france/security.qmd
+            - regions/europe/france/economic.qmd
+            - regions/europe/france/political.qmd
+            - regions/europe/france/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/france/datasets.qmd
+    - title: "Germany"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/germany/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/germany/security.qmd
+            - regions/europe/germany/economic.qmd
+            - regions/europe/germany/political.qmd
+            - regions/europe/germany/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/germany/datasets.qmd
+    - title: "Greece"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/greece/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/greece/security.qmd
+            - regions/europe/greece/economic.qmd
+            - regions/europe/greece/political.qmd
+            - regions/europe/greece/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/greece/datasets.qmd
+    - title: "Hungary"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/hungary/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/hungary/security.qmd
+            - regions/europe/hungary/economic.qmd
+            - regions/europe/hungary/political.qmd
+            - regions/europe/hungary/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/hungary/datasets.qmd
+    - title: "Iceland"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/iceland/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/iceland/security.qmd
+            - regions/europe/iceland/economic.qmd
+            - regions/europe/iceland/political.qmd
+            - regions/europe/iceland/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/iceland/datasets.qmd
+    - title: "Ireland"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/ireland/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/ireland/security.qmd
+            - regions/europe/ireland/economic.qmd
+            - regions/europe/ireland/political.qmd
+            - regions/europe/ireland/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/ireland/datasets.qmd
+    - title: "Italy"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/italy/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/italy/security.qmd
+            - regions/europe/italy/economic.qmd
+            - regions/europe/italy/political.qmd
+            - regions/europe/italy/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/italy/datasets.qmd
+    - title: "Kosovo"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/kosovo/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/kosovo/security.qmd
+            - regions/europe/kosovo/economic.qmd
+            - regions/europe/kosovo/political.qmd
+            - regions/europe/kosovo/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/kosovo/datasets.qmd
+    - title: "Latvia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/latvia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/latvia/security.qmd
+            - regions/europe/latvia/economic.qmd
+            - regions/europe/latvia/political.qmd
+            - regions/europe/latvia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/latvia/datasets.qmd
+    - title: "Liechtenstein"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/liechtenstein/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/liechtenstein/security.qmd
+            - regions/europe/liechtenstein/economic.qmd
+            - regions/europe/liechtenstein/political.qmd
+            - regions/europe/liechtenstein/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/liechtenstein/datasets.qmd
+    - title: "Lithuania"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/lithuania/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/lithuania/security.qmd
+            - regions/europe/lithuania/economic.qmd
+            - regions/europe/lithuania/political.qmd
+            - regions/europe/lithuania/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/lithuania/datasets.qmd
+    - title: "Luxembourg"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/luxembourg/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/luxembourg/security.qmd
+            - regions/europe/luxembourg/economic.qmd
+            - regions/europe/luxembourg/political.qmd
+            - regions/europe/luxembourg/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/luxembourg/datasets.qmd
+    - title: "Malta"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/malta/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/malta/security.qmd
+            - regions/europe/malta/economic.qmd
+            - regions/europe/malta/political.qmd
+            - regions/europe/malta/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/malta/datasets.qmd
+    - title: "Moldova"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/moldova/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/moldova/security.qmd
+            - regions/europe/moldova/economic.qmd
+            - regions/europe/moldova/political.qmd
+            - regions/europe/moldova/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/moldova/datasets.qmd
+    - title: "Monaco"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/monaco/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/monaco/security.qmd
+            - regions/europe/monaco/economic.qmd
+            - regions/europe/monaco/political.qmd
+            - regions/europe/monaco/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/monaco/datasets.qmd
+    - title: "Montenegro"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/montenegro/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/montenegro/security.qmd
+            - regions/europe/montenegro/economic.qmd
+            - regions/europe/montenegro/political.qmd
+            - regions/europe/montenegro/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/montenegro/datasets.qmd
+    - title: "Netherlands"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/netherlands/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/netherlands/security.qmd
+            - regions/europe/netherlands/economic.qmd
+            - regions/europe/netherlands/political.qmd
+            - regions/europe/netherlands/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/netherlands/datasets.qmd
+    - title: "North Macedonia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/north-macedonia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/north-macedonia/security.qmd
+            - regions/europe/north-macedonia/economic.qmd
+            - regions/europe/north-macedonia/political.qmd
+            - regions/europe/north-macedonia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/north-macedonia/datasets.qmd
+    - title: "Norway"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/norway/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/norway/security.qmd
+            - regions/europe/norway/economic.qmd
+            - regions/europe/norway/political.qmd
+            - regions/europe/norway/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/norway/datasets.qmd
+    - title: "Poland"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/poland/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/poland/security.qmd
+            - regions/europe/poland/economic.qmd
+            - regions/europe/poland/political.qmd
+            - regions/europe/poland/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/poland/datasets.qmd
+    - title: "Portugal"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/portugal/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/portugal/security.qmd
+            - regions/europe/portugal/economic.qmd
+            - regions/europe/portugal/political.qmd
+            - regions/europe/portugal/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/portugal/datasets.qmd
+    - title: "Romania"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/romania/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/romania/security.qmd
+            - regions/europe/romania/economic.qmd
+            - regions/europe/romania/political.qmd
+            - regions/europe/romania/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/romania/datasets.qmd
+    - title: "San Marino"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/san-marino/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/san-marino/security.qmd
+            - regions/europe/san-marino/economic.qmd
+            - regions/europe/san-marino/political.qmd
+            - regions/europe/san-marino/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/san-marino/datasets.qmd
+    - title: "Serbia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/serbia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/serbia/security.qmd
+            - regions/europe/serbia/economic.qmd
+            - regions/europe/serbia/political.qmd
+            - regions/europe/serbia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/serbia/datasets.qmd
+    - title: "Slovakia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/slovakia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/slovakia/security.qmd
+            - regions/europe/slovakia/economic.qmd
+            - regions/europe/slovakia/political.qmd
+            - regions/europe/slovakia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/slovakia/datasets.qmd
+    - title: "Slovenia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/slovenia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/slovenia/security.qmd
+            - regions/europe/slovenia/economic.qmd
+            - regions/europe/slovenia/political.qmd
+            - regions/europe/slovenia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/slovenia/datasets.qmd
+    - title: "Spain"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/spain/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/spain/security.qmd
+            - regions/europe/spain/economic.qmd
+            - regions/europe/spain/political.qmd
+            - regions/europe/spain/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/spain/datasets.qmd
+    - title: "Sweden"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/sweden/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/sweden/security.qmd
+            - regions/europe/sweden/economic.qmd
+            - regions/europe/sweden/political.qmd
+            - regions/europe/sweden/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/sweden/datasets.qmd
+    - title: "Switzerland"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/switzerland/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/switzerland/security.qmd
+            - regions/europe/switzerland/economic.qmd
+            - regions/europe/switzerland/political.qmd
+            - regions/europe/switzerland/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/switzerland/datasets.qmd
+    - title: "United Kingdom"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/europe/united-kingdom/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/europe/united-kingdom/security.qmd
+            - regions/europe/united-kingdom/economic.qmd
+            - regions/europe/united-kingdom/political.qmd
+            - regions/europe/united-kingdom/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/europe/united-kingdom/datasets.qmd
+    - title: "Belize"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/north-central-america/belize/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/north-central-america/belize/security.qmd
+            - regions/north-central-america/belize/economic.qmd
+            - regions/north-central-america/belize/political.qmd
+            - regions/north-central-america/belize/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/north-central-america/belize/datasets.qmd
+    - title: "Canada"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/north-central-america/canada/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/north-central-america/canada/security.qmd
+            - regions/north-central-america/canada/economic.qmd
+            - regions/north-central-america/canada/political.qmd
+            - regions/north-central-america/canada/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/north-central-america/canada/datasets.qmd
+    - title: "Costa Rica"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/north-central-america/costa-rica/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/north-central-america/costa-rica/security.qmd
+            - regions/north-central-america/costa-rica/economic.qmd
+            - regions/north-central-america/costa-rica/political.qmd
+            - regions/north-central-america/costa-rica/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/north-central-america/costa-rica/datasets.qmd
+    - title: "El Salvador"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/north-central-america/el-salvador/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/north-central-america/el-salvador/security.qmd
+            - regions/north-central-america/el-salvador/economic.qmd
+            - regions/north-central-america/el-salvador/political.qmd
+            - regions/north-central-america/el-salvador/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/north-central-america/el-salvador/datasets.qmd
+    - title: "Guatemala"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/north-central-america/guatemala/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/north-central-america/guatemala/security.qmd
+            - regions/north-central-america/guatemala/economic.qmd
+            - regions/north-central-america/guatemala/political.qmd
+            - regions/north-central-america/guatemala/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/north-central-america/guatemala/datasets.qmd
+    - title: "Honduras"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/north-central-america/honduras/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/north-central-america/honduras/security.qmd
+            - regions/north-central-america/honduras/economic.qmd
+            - regions/north-central-america/honduras/political.qmd
+            - regions/north-central-america/honduras/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/north-central-america/honduras/datasets.qmd
+    - title: "Mexico"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/north-central-america/mexico/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/north-central-america/mexico/security.qmd
+            - regions/north-central-america/mexico/economic.qmd
+            - regions/north-central-america/mexico/political.qmd
+            - regions/north-central-america/mexico/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/north-central-america/mexico/datasets.qmd
+    - title: "Nicaragua"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/north-central-america/nicaragua/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/north-central-america/nicaragua/security.qmd
+            - regions/north-central-america/nicaragua/economic.qmd
+            - regions/north-central-america/nicaragua/political.qmd
+            - regions/north-central-america/nicaragua/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/north-central-america/nicaragua/datasets.qmd
+    - title: "Panama"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/north-central-america/panama/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/north-central-america/panama/security.qmd
+            - regions/north-central-america/panama/economic.qmd
+            - regions/north-central-america/panama/political.qmd
+            - regions/north-central-america/panama/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/north-central-america/panama/datasets.qmd
+    - title: "Algeria"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/algeria/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/algeria/security.qmd
+            - regions/mena/algeria/economic.qmd
+            - regions/mena/algeria/political.qmd
+            - regions/mena/algeria/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/algeria/datasets.qmd
+    - title: "Bahrain"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/bahrain/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/bahrain/security.qmd
+            - regions/mena/bahrain/economic.qmd
+            - regions/mena/bahrain/political.qmd
+            - regions/mena/bahrain/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/bahrain/datasets.qmd
+    - title: "Egypt"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/egypt/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/egypt/security.qmd
+            - regions/mena/egypt/economic.qmd
+            - regions/mena/egypt/political.qmd
+            - regions/mena/egypt/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/egypt/datasets.qmd
+    - title: "Iran"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/iran/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/iran/security.qmd
+            - regions/mena/iran/economic.qmd
+            - regions/mena/iran/political.qmd
+            - regions/mena/iran/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/iran/datasets.qmd
+    - title: "Iraq"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/iraq/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/iraq/security.qmd
+            - regions/mena/iraq/economic.qmd
+            - regions/mena/iraq/political.qmd
+            - regions/mena/iraq/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/iraq/datasets.qmd
+    - title: "Israel"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/israel/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/israel/security.qmd
+            - regions/mena/israel/economic.qmd
+            - regions/mena/israel/political.qmd
+            - regions/mena/israel/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/israel/datasets.qmd
+    - title: "Jordan"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/jordan/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/jordan/security.qmd
+            - regions/mena/jordan/economic.qmd
+            - regions/mena/jordan/political.qmd
+            - regions/mena/jordan/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/jordan/datasets.qmd
+    - title: "Kuwait"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/kuwait/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/kuwait/security.qmd
+            - regions/mena/kuwait/economic.qmd
+            - regions/mena/kuwait/political.qmd
+            - regions/mena/kuwait/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/kuwait/datasets.qmd
+    - title: "Lebanon"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/lebanon/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/lebanon/security.qmd
+            - regions/mena/lebanon/economic.qmd
+            - regions/mena/lebanon/political.qmd
+            - regions/mena/lebanon/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/lebanon/datasets.qmd
+    - title: "Libya"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/libya/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/libya/security.qmd
+            - regions/mena/libya/economic.qmd
+            - regions/mena/libya/political.qmd
+            - regions/mena/libya/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/libya/datasets.qmd
+    - title: "Morocco"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/morocco/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/morocco/security.qmd
+            - regions/mena/morocco/economic.qmd
+            - regions/mena/morocco/political.qmd
+            - regions/mena/morocco/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/morocco/datasets.qmd
+    - title: "Oman"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/oman/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/oman/security.qmd
+            - regions/mena/oman/economic.qmd
+            - regions/mena/oman/political.qmd
+            - regions/mena/oman/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/oman/datasets.qmd
+    - title: "Palestine"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/palestine/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/palestine/security.qmd
+            - regions/mena/palestine/economic.qmd
+            - regions/mena/palestine/political.qmd
+            - regions/mena/palestine/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/palestine/datasets.qmd
+    - title: "Qatar"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/qatar/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/qatar/security.qmd
+            - regions/mena/qatar/economic.qmd
+            - regions/mena/qatar/political.qmd
+            - regions/mena/qatar/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/qatar/datasets.qmd
+    - title: "Saudi Arabia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/saudi-arabia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/saudi-arabia/security.qmd
+            - regions/mena/saudi-arabia/economic.qmd
+            - regions/mena/saudi-arabia/political.qmd
+            - regions/mena/saudi-arabia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/saudi-arabia/datasets.qmd
+    - title: "Syria"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/syria/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/syria/security.qmd
+            - regions/mena/syria/economic.qmd
+            - regions/mena/syria/political.qmd
+            - regions/mena/syria/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/syria/datasets.qmd
+    - title: "Tunisia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/tunisia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/tunisia/security.qmd
+            - regions/mena/tunisia/economic.qmd
+            - regions/mena/tunisia/political.qmd
+            - regions/mena/tunisia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/tunisia/datasets.qmd
+    - title: "Turkey"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/turkey/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/turkey/security.qmd
+            - regions/mena/turkey/economic.qmd
+            - regions/mena/turkey/political.qmd
+            - regions/mena/turkey/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/turkey/datasets.qmd
+    - title: "United Arab Emirates"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/united-arab-emirates/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/united-arab-emirates/security.qmd
+            - regions/mena/united-arab-emirates/economic.qmd
+            - regions/mena/united-arab-emirates/political.qmd
+            - regions/mena/united-arab-emirates/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/united-arab-emirates/datasets.qmd
+    - title: "Yemen"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/mena/yemen/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/mena/yemen/security.qmd
+            - regions/mena/yemen/economic.qmd
+            - regions/mena/yemen/political.qmd
+            - regions/mena/yemen/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/mena/yemen/datasets.qmd
+    - title: "Australia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/oceania/australia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/oceania/australia/security.qmd
+            - regions/oceania/australia/economic.qmd
+            - regions/oceania/australia/political.qmd
+            - regions/oceania/australia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/oceania/australia/datasets.qmd
+    - title: "Fiji"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/oceania/fiji/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/oceania/fiji/security.qmd
+            - regions/oceania/fiji/economic.qmd
+            - regions/oceania/fiji/political.qmd
+            - regions/oceania/fiji/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/oceania/fiji/datasets.qmd
+    - title: "Kiribati"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/oceania/kiribati/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/oceania/kiribati/security.qmd
+            - regions/oceania/kiribati/economic.qmd
+            - regions/oceania/kiribati/political.qmd
+            - regions/oceania/kiribati/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/oceania/kiribati/datasets.qmd
+    - title: "Marshall Islands"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/oceania/marshall-islands/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/oceania/marshall-islands/security.qmd
+            - regions/oceania/marshall-islands/economic.qmd
+            - regions/oceania/marshall-islands/political.qmd
+            - regions/oceania/marshall-islands/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/oceania/marshall-islands/datasets.qmd
+    - title: "Micronesia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/oceania/micronesia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/oceania/micronesia/security.qmd
+            - regions/oceania/micronesia/economic.qmd
+            - regions/oceania/micronesia/political.qmd
+            - regions/oceania/micronesia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/oceania/micronesia/datasets.qmd
+    - title: "Nauru"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/oceania/nauru/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/oceania/nauru/security.qmd
+            - regions/oceania/nauru/economic.qmd
+            - regions/oceania/nauru/political.qmd
+            - regions/oceania/nauru/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/oceania/nauru/datasets.qmd
+    - title: "New Zealand"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/oceania/new-zealand/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/oceania/new-zealand/security.qmd
+            - regions/oceania/new-zealand/economic.qmd
+            - regions/oceania/new-zealand/political.qmd
+            - regions/oceania/new-zealand/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/oceania/new-zealand/datasets.qmd
+    - title: "Palau"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/oceania/palau/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/oceania/palau/security.qmd
+            - regions/oceania/palau/economic.qmd
+            - regions/oceania/palau/political.qmd
+            - regions/oceania/palau/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/oceania/palau/datasets.qmd
+    - title: "Papua New Guinea"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/oceania/papua-new-guinea/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/oceania/papua-new-guinea/security.qmd
+            - regions/oceania/papua-new-guinea/economic.qmd
+            - regions/oceania/papua-new-guinea/political.qmd
+            - regions/oceania/papua-new-guinea/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/oceania/papua-new-guinea/datasets.qmd
+    - title: "Samoa"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/oceania/samoa/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/oceania/samoa/security.qmd
+            - regions/oceania/samoa/economic.qmd
+            - regions/oceania/samoa/political.qmd
+            - regions/oceania/samoa/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/oceania/samoa/datasets.qmd
+    - title: "Solomon Islands"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/oceania/solomon-islands/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/oceania/solomon-islands/security.qmd
+            - regions/oceania/solomon-islands/economic.qmd
+            - regions/oceania/solomon-islands/political.qmd
+            - regions/oceania/solomon-islands/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/oceania/solomon-islands/datasets.qmd
+    - title: "Tonga"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/oceania/tonga/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/oceania/tonga/security.qmd
+            - regions/oceania/tonga/economic.qmd
+            - regions/oceania/tonga/political.qmd
+            - regions/oceania/tonga/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/oceania/tonga/datasets.qmd
+    - title: "Tuvalu"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/oceania/tuvalu/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/oceania/tuvalu/security.qmd
+            - regions/oceania/tuvalu/economic.qmd
+            - regions/oceania/tuvalu/political.qmd
+            - regions/oceania/tuvalu/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/oceania/tuvalu/datasets.qmd
+    - title: "Vanuatu"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/oceania/vanuatu/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/oceania/vanuatu/security.qmd
+            - regions/oceania/vanuatu/economic.qmd
+            - regions/oceania/vanuatu/political.qmd
+            - regions/oceania/vanuatu/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/oceania/vanuatu/datasets.qmd
+    - title: "Argentina"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/south-america/argentina/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/south-america/argentina/security.qmd
+            - regions/south-america/argentina/economic.qmd
+            - regions/south-america/argentina/political.qmd
+            - regions/south-america/argentina/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/south-america/argentina/datasets.qmd
+    - title: "Bolivia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/south-america/bolivia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/south-america/bolivia/security.qmd
+            - regions/south-america/bolivia/economic.qmd
+            - regions/south-america/bolivia/political.qmd
+            - regions/south-america/bolivia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/south-america/bolivia/datasets.qmd
+    - title: "Brazil"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/south-america/brazil/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/south-america/brazil/security.qmd
+            - regions/south-america/brazil/economic.qmd
+            - regions/south-america/brazil/political.qmd
+            - regions/south-america/brazil/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/south-america/brazil/datasets.qmd
+    - title: "Chile"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/south-america/chile/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/south-america/chile/security.qmd
+            - regions/south-america/chile/economic.qmd
+            - regions/south-america/chile/political.qmd
+            - regions/south-america/chile/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/south-america/chile/datasets.qmd
+    - title: "Colombia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/south-america/colombia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/south-america/colombia/security.qmd
+            - regions/south-america/colombia/economic.qmd
+            - regions/south-america/colombia/political.qmd
+            - regions/south-america/colombia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/south-america/colombia/datasets.qmd
+    - title: "Ecuador"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/south-america/ecuador/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/south-america/ecuador/security.qmd
+            - regions/south-america/ecuador/economic.qmd
+            - regions/south-america/ecuador/political.qmd
+            - regions/south-america/ecuador/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/south-america/ecuador/datasets.qmd
+    - title: "Guyana"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/south-america/guyana/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/south-america/guyana/security.qmd
+            - regions/south-america/guyana/economic.qmd
+            - regions/south-america/guyana/political.qmd
+            - regions/south-america/guyana/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/south-america/guyana/datasets.qmd
+    - title: "Paraguay"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/south-america/paraguay/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/south-america/paraguay/security.qmd
+            - regions/south-america/paraguay/economic.qmd
+            - regions/south-america/paraguay/political.qmd
+            - regions/south-america/paraguay/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/south-america/paraguay/datasets.qmd
+    - title: "Peru"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/south-america/peru/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/south-america/peru/security.qmd
+            - regions/south-america/peru/economic.qmd
+            - regions/south-america/peru/political.qmd
+            - regions/south-america/peru/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/south-america/peru/datasets.qmd
+    - title: "Suriname"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/south-america/suriname/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/south-america/suriname/security.qmd
+            - regions/south-america/suriname/economic.qmd
+            - regions/south-america/suriname/political.qmd
+            - regions/south-america/suriname/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/south-america/suriname/datasets.qmd
+    - title: "Uruguay"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/south-america/uruguay/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/south-america/uruguay/security.qmd
+            - regions/south-america/uruguay/economic.qmd
+            - regions/south-america/uruguay/political.qmd
+            - regions/south-america/uruguay/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/south-america/uruguay/datasets.qmd
+    - title: "Venezuela"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/south-america/venezuela/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/south-america/venezuela/security.qmd
+            - regions/south-america/venezuela/economic.qmd
+            - regions/south-america/venezuela/political.qmd
+            - regions/south-america/venezuela/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/south-america/venezuela/datasets.qmd
+    - title: "Angola"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/angola/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/angola/security.qmd
+            - regions/sub-saharan-africa/angola/economic.qmd
+            - regions/sub-saharan-africa/angola/political.qmd
+            - regions/sub-saharan-africa/angola/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/angola/datasets.qmd
+    - title: "Benin"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/benin/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/benin/security.qmd
+            - regions/sub-saharan-africa/benin/economic.qmd
+            - regions/sub-saharan-africa/benin/political.qmd
+            - regions/sub-saharan-africa/benin/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/benin/datasets.qmd
+    - title: "Botswana"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/botswana/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/botswana/security.qmd
+            - regions/sub-saharan-africa/botswana/economic.qmd
+            - regions/sub-saharan-africa/botswana/political.qmd
+            - regions/sub-saharan-africa/botswana/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/botswana/datasets.qmd
+    - title: "Burkina Faso"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/burkina-faso/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/burkina-faso/security.qmd
+            - regions/sub-saharan-africa/burkina-faso/economic.qmd
+            - regions/sub-saharan-africa/burkina-faso/political.qmd
+            - regions/sub-saharan-africa/burkina-faso/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/burkina-faso/datasets.qmd
+    - title: "Burundi"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/burundi/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/burundi/security.qmd
+            - regions/sub-saharan-africa/burundi/economic.qmd
+            - regions/sub-saharan-africa/burundi/political.qmd
+            - regions/sub-saharan-africa/burundi/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/burundi/datasets.qmd
+    - title: "Cameroon"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/cameroon/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/cameroon/security.qmd
+            - regions/sub-saharan-africa/cameroon/economic.qmd
+            - regions/sub-saharan-africa/cameroon/political.qmd
+            - regions/sub-saharan-africa/cameroon/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/cameroon/datasets.qmd
+    - title: "Cape Verde"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/cape-verde/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/cape-verde/security.qmd
+            - regions/sub-saharan-africa/cape-verde/economic.qmd
+            - regions/sub-saharan-africa/cape-verde/political.qmd
+            - regions/sub-saharan-africa/cape-verde/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/cape-verde/datasets.qmd
+    - title: "Central African Republic"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/central-african-republic/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/central-african-republic/security.qmd
+            - regions/sub-saharan-africa/central-african-republic/economic.qmd
+            - regions/sub-saharan-africa/central-african-republic/political.qmd
+            - regions/sub-saharan-africa/central-african-republic/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/central-african-republic/datasets.qmd
+    - title: "Chad"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/chad/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/chad/security.qmd
+            - regions/sub-saharan-africa/chad/economic.qmd
+            - regions/sub-saharan-africa/chad/political.qmd
+            - regions/sub-saharan-africa/chad/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/chad/datasets.qmd
+    - title: "Comoros"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/comoros/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/comoros/security.qmd
+            - regions/sub-saharan-africa/comoros/economic.qmd
+            - regions/sub-saharan-africa/comoros/political.qmd
+            - regions/sub-saharan-africa/comoros/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/comoros/datasets.qmd
+    - title: "Congo (Brazzaville)"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/congo-brazzaville/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/congo-brazzaville/security.qmd
+            - regions/sub-saharan-africa/congo-brazzaville/economic.qmd
+            - regions/sub-saharan-africa/congo-brazzaville/political.qmd
+            - regions/sub-saharan-africa/congo-brazzaville/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/congo-brazzaville/datasets.qmd
+    - title: "Côte d'Ivoire"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/cote-divoire/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/cote-divoire/security.qmd
+            - regions/sub-saharan-africa/cote-divoire/economic.qmd
+            - regions/sub-saharan-africa/cote-divoire/political.qmd
+            - regions/sub-saharan-africa/cote-divoire/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/cote-divoire/datasets.qmd
+    - title: "DR Congo"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/dr-congo/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/dr-congo/security.qmd
+            - regions/sub-saharan-africa/dr-congo/economic.qmd
+            - regions/sub-saharan-africa/dr-congo/political.qmd
+            - regions/sub-saharan-africa/dr-congo/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/dr-congo/datasets.qmd
+    - title: "Djibouti"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/djibouti/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/djibouti/security.qmd
+            - regions/sub-saharan-africa/djibouti/economic.qmd
+            - regions/sub-saharan-africa/djibouti/political.qmd
+            - regions/sub-saharan-africa/djibouti/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/djibouti/datasets.qmd
+    - title: "Equatorial Guinea"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/equatorial-guinea/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/equatorial-guinea/security.qmd
+            - regions/sub-saharan-africa/equatorial-guinea/economic.qmd
+            - regions/sub-saharan-africa/equatorial-guinea/political.qmd
+            - regions/sub-saharan-africa/equatorial-guinea/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/equatorial-guinea/datasets.qmd
+    - title: "Eritrea"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/eritrea/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/eritrea/security.qmd
+            - regions/sub-saharan-africa/eritrea/economic.qmd
+            - regions/sub-saharan-africa/eritrea/political.qmd
+            - regions/sub-saharan-africa/eritrea/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/eritrea/datasets.qmd
+    - title: "Eswatini"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/eswatini/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/eswatini/security.qmd
+            - regions/sub-saharan-africa/eswatini/economic.qmd
+            - regions/sub-saharan-africa/eswatini/political.qmd
+            - regions/sub-saharan-africa/eswatini/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/eswatini/datasets.qmd
+    - title: "Ethiopia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/ethiopia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/ethiopia/security.qmd
+            - regions/sub-saharan-africa/ethiopia/economic.qmd
+            - regions/sub-saharan-africa/ethiopia/political.qmd
+            - regions/sub-saharan-africa/ethiopia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/ethiopia/datasets.qmd
+    - title: "Gabon"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/gabon/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/gabon/security.qmd
+            - regions/sub-saharan-africa/gabon/economic.qmd
+            - regions/sub-saharan-africa/gabon/political.qmd
+            - regions/sub-saharan-africa/gabon/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/gabon/datasets.qmd
+    - title: "Gambia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/gambia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/gambia/security.qmd
+            - regions/sub-saharan-africa/gambia/economic.qmd
+            - regions/sub-saharan-africa/gambia/political.qmd
+            - regions/sub-saharan-africa/gambia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/gambia/datasets.qmd
+    - title: "Ghana"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/ghana/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/ghana/security.qmd
+            - regions/sub-saharan-africa/ghana/economic.qmd
+            - regions/sub-saharan-africa/ghana/political.qmd
+            - regions/sub-saharan-africa/ghana/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/ghana/datasets.qmd
+    - title: "Guinea"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/guinea/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/guinea/security.qmd
+            - regions/sub-saharan-africa/guinea/economic.qmd
+            - regions/sub-saharan-africa/guinea/political.qmd
+            - regions/sub-saharan-africa/guinea/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/guinea/datasets.qmd
+    - title: "Guinea-Bissau"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/guinea-bissau/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/guinea-bissau/security.qmd
+            - regions/sub-saharan-africa/guinea-bissau/economic.qmd
+            - regions/sub-saharan-africa/guinea-bissau/political.qmd
+            - regions/sub-saharan-africa/guinea-bissau/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/guinea-bissau/datasets.qmd
+    - title: "Kenya"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/kenya/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/kenya/security.qmd
+            - regions/sub-saharan-africa/kenya/economic.qmd
+            - regions/sub-saharan-africa/kenya/political.qmd
+            - regions/sub-saharan-africa/kenya/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/kenya/datasets.qmd
+    - title: "Lesotho"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/lesotho/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/lesotho/security.qmd
+            - regions/sub-saharan-africa/lesotho/economic.qmd
+            - regions/sub-saharan-africa/lesotho/political.qmd
+            - regions/sub-saharan-africa/lesotho/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/lesotho/datasets.qmd
+    - title: "Liberia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/liberia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/liberia/security.qmd
+            - regions/sub-saharan-africa/liberia/economic.qmd
+            - regions/sub-saharan-africa/liberia/political.qmd
+            - regions/sub-saharan-africa/liberia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/liberia/datasets.qmd
+    - title: "Madagascar"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/madagascar/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/madagascar/security.qmd
+            - regions/sub-saharan-africa/madagascar/economic.qmd
+            - regions/sub-saharan-africa/madagascar/political.qmd
+            - regions/sub-saharan-africa/madagascar/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/madagascar/datasets.qmd
+    - title: "Malawi"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/malawi/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/malawi/security.qmd
+            - regions/sub-saharan-africa/malawi/economic.qmd
+            - regions/sub-saharan-africa/malawi/political.qmd
+            - regions/sub-saharan-africa/malawi/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/malawi/datasets.qmd
+    - title: "Mali"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/mali/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/mali/security.qmd
+            - regions/sub-saharan-africa/mali/economic.qmd
+            - regions/sub-saharan-africa/mali/political.qmd
+            - regions/sub-saharan-africa/mali/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/mali/datasets.qmd
+    - title: "Mauritania"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/mauritania/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/mauritania/security.qmd
+            - regions/sub-saharan-africa/mauritania/economic.qmd
+            - regions/sub-saharan-africa/mauritania/political.qmd
+            - regions/sub-saharan-africa/mauritania/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/mauritania/datasets.qmd
+    - title: "Mauritius"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/mauritius/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/mauritius/security.qmd
+            - regions/sub-saharan-africa/mauritius/economic.qmd
+            - regions/sub-saharan-africa/mauritius/political.qmd
+            - regions/sub-saharan-africa/mauritius/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/mauritius/datasets.qmd
+    - title: "Mozambique"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/mozambique/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/mozambique/security.qmd
+            - regions/sub-saharan-africa/mozambique/economic.qmd
+            - regions/sub-saharan-africa/mozambique/political.qmd
+            - regions/sub-saharan-africa/mozambique/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/mozambique/datasets.qmd
+    - title: "Namibia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/namibia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/namibia/security.qmd
+            - regions/sub-saharan-africa/namibia/economic.qmd
+            - regions/sub-saharan-africa/namibia/political.qmd
+            - regions/sub-saharan-africa/namibia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/namibia/datasets.qmd
+    - title: "Niger"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/niger/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/niger/security.qmd
+            - regions/sub-saharan-africa/niger/economic.qmd
+            - regions/sub-saharan-africa/niger/political.qmd
+            - regions/sub-saharan-africa/niger/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/niger/datasets.qmd
+    - title: "Nigeria"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/nigeria/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/nigeria/security.qmd
+            - regions/sub-saharan-africa/nigeria/economic.qmd
+            - regions/sub-saharan-africa/nigeria/political.qmd
+            - regions/sub-saharan-africa/nigeria/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/nigeria/datasets.qmd
+    - title: "Rwanda"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/rwanda/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/rwanda/security.qmd
+            - regions/sub-saharan-africa/rwanda/economic.qmd
+            - regions/sub-saharan-africa/rwanda/political.qmd
+            - regions/sub-saharan-africa/rwanda/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/rwanda/datasets.qmd
+    - title: "Senegal"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/senegal/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/senegal/security.qmd
+            - regions/sub-saharan-africa/senegal/economic.qmd
+            - regions/sub-saharan-africa/senegal/political.qmd
+            - regions/sub-saharan-africa/senegal/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/senegal/datasets.qmd
+    - title: "Seychelles"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/seychelles/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/seychelles/security.qmd
+            - regions/sub-saharan-africa/seychelles/economic.qmd
+            - regions/sub-saharan-africa/seychelles/political.qmd
+            - regions/sub-saharan-africa/seychelles/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/seychelles/datasets.qmd
+    - title: "Sierra Leone"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/sierra-leone/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/sierra-leone/security.qmd
+            - regions/sub-saharan-africa/sierra-leone/economic.qmd
+            - regions/sub-saharan-africa/sierra-leone/political.qmd
+            - regions/sub-saharan-africa/sierra-leone/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/sierra-leone/datasets.qmd
+    - title: "Somalia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/somalia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/somalia/security.qmd
+            - regions/sub-saharan-africa/somalia/economic.qmd
+            - regions/sub-saharan-africa/somalia/political.qmd
+            - regions/sub-saharan-africa/somalia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/somalia/datasets.qmd
+    - title: "South Africa"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/south-africa/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/south-africa/security.qmd
+            - regions/sub-saharan-africa/south-africa/economic.qmd
+            - regions/sub-saharan-africa/south-africa/political.qmd
+            - regions/sub-saharan-africa/south-africa/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/south-africa/datasets.qmd
+    - title: "South Sudan"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/south-sudan/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/south-sudan/security.qmd
+            - regions/sub-saharan-africa/south-sudan/economic.qmd
+            - regions/sub-saharan-africa/south-sudan/political.qmd
+            - regions/sub-saharan-africa/south-sudan/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/south-sudan/datasets.qmd
+    - title: "Sudan"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/sudan/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/sudan/security.qmd
+            - regions/sub-saharan-africa/sudan/economic.qmd
+            - regions/sub-saharan-africa/sudan/political.qmd
+            - regions/sub-saharan-africa/sudan/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/sudan/datasets.qmd
+    - title: "São Tomé and Príncipe"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/sao-tome-and-principe/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/sao-tome-and-principe/security.qmd
+            - regions/sub-saharan-africa/sao-tome-and-principe/economic.qmd
+            - regions/sub-saharan-africa/sao-tome-and-principe/political.qmd
+            - regions/sub-saharan-africa/sao-tome-and-principe/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/sao-tome-and-principe/datasets.qmd
+    - title: "Tanzania"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/tanzania/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/tanzania/security.qmd
+            - regions/sub-saharan-africa/tanzania/economic.qmd
+            - regions/sub-saharan-africa/tanzania/political.qmd
+            - regions/sub-saharan-africa/tanzania/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/tanzania/datasets.qmd
+    - title: "Togo"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/togo/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/togo/security.qmd
+            - regions/sub-saharan-africa/togo/economic.qmd
+            - regions/sub-saharan-africa/togo/political.qmd
+            - regions/sub-saharan-africa/togo/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/togo/datasets.qmd
+    - title: "Uganda"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/uganda/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/uganda/security.qmd
+            - regions/sub-saharan-africa/uganda/economic.qmd
+            - regions/sub-saharan-africa/uganda/political.qmd
+            - regions/sub-saharan-africa/uganda/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/uganda/datasets.qmd
+    - title: "Zambia"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/zambia/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/zambia/security.qmd
+            - regions/sub-saharan-africa/zambia/economic.qmd
+            - regions/sub-saharan-africa/zambia/political.qmd
+            - regions/sub-saharan-africa/zambia/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/zambia/datasets.qmd
+    - title: "Zimbabwe"
+      style: "docked"
+      contents:
+        - text: "Overview"
+          href: regions/sub-saharan-africa/zimbabwe/index.qmd
+        - section: "By topic"
+          contents:
+            - regions/sub-saharan-africa/zimbabwe/security.qmd
+            - regions/sub-saharan-africa/zimbabwe/economic.qmd
+            - regions/sub-saharan-africa/zimbabwe/political.qmd
+            - regions/sub-saharan-africa/zimbabwe/societal.qmd
+        - text: "Datasets (quantitative)"
+          href: regions/sub-saharan-africa/zimbabwe/datasets.qmd
+  page-footer:
+    left: "Open-Source Analysis Lab"
+    right: "Scores are analyst assessments, updated continuously. Last built: {{< meta date >}}"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+    toc: true
+    toc-depth: 3
+    grid:
+      sidebar-width: 250px
+      body-width: 900px
+    code-copy: true
+    anchor-sections: true
+    smooth-scroll: true

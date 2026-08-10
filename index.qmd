@@ -1,0 +1,80 @@
+---
+title: "Open-Source Analysis Lab"
+subtitle: "A curated, scored registry of in-country and expert open sources"
+date: today
+---
+
+::: {.lede}
+The Open-Source Analysis Lab (OSAL) collects primary and expert open sources that offer distinctive
+insight into a country — reporting by people inside the country (in any language), independent
+investigative outlets, in-country think tanks, pollsters, and subject-matter experts. Every source is
+scored on seven criteria so an analyst can judge quickly what a source is worth. See the
+[Methodology](methodology.qmd) for the scoring rubric and inclusion criteria.
+:::
+
+```{ojs}
+//| echo: false
+db = FileAttachment("data/sources.csv").csv({typed: true})
+```
+
+```{ojs}
+//| echo: false
+regionFolder = ({
+  "Eurasia": "eurasia", "Europe": "europe", "North Africa & Middle East": "mena",
+  "Asia": "asia", "Sub-Saharan Africa": "sub-saharan-africa", "South America": "south-america",
+  "North & Central America": "north-central-america", "Caribbean": "caribbean", "Oceania": "oceania"
+})
+
+slugify = function(c){
+  const map = {"ô":"o","é":"e","í":"i","ã":"a","á":"a","ç":"c","ö":"o","ü":"u","č":"c","ž":"z","š":"s","&":"and"};
+  let s = c.toLowerCase().replace(/[ôéíãáçöüčžš&]/g, ch => map[ch] || ch);
+  s = s.replace(/[()'.]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  return s;
+}
+
+countries = {
+  const byName = new Map();
+  for (const d of db) {
+    if (!byName.has(d.country)) byName.set(d.country, {name: d.country, region: d.region, sources: 0, datasets: 0});
+    const c = byName.get(d.country);
+    c.sources += 1;
+    if (d.is_dataset === "yes") c.datasets += 1;
+  }
+  return Array.from(byName.values())
+    .map(c => ({...c, href: `regions/${regionFolder[c.region]}/${slugify(c.name)}/index.html`}))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+```
+
+```{ojs}
+//| echo: false
+viewof q = Inputs.text({label: "Filter countries", placeholder: "type a country name…", width: 280})
+```
+
+```{ojs}
+//| echo: false
+shown = q ? countries.filter(c => c.name.toLowerCase().includes(q.toLowerCase())) : countries
+```
+
+```{ojs}
+//| echo: false
+html`<p class="count">Indexing <strong>${db.length}</strong> sources across <strong>${countries.length}</strong> countries — <strong>${shown.length}</strong> shown.</p>`
+```
+
+```{ojs}
+//| echo: false
+html`<div class="osal-scroll"><table class="osal">
+  <thead><tr>
+    <th>Country</th>
+    <th class="num">Sources</th>
+    <th class="num">Datasets</th>
+  </tr></thead>
+  <tbody>
+    ${shown.map(c => html`<tr>
+      <td><a href="${c.href}" class="src-name">${c.name}</a></td>
+      <td class="num">${c.sources}</td>
+      <td class="num">${c.datasets}</td>
+    </tr>`)}
+  </tbody>
+</table></div>`
+```

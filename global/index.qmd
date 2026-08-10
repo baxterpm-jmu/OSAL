@@ -1,0 +1,14 @@
+---
+title: "Global"
+subtitle: "Cross-country and thematic open sources"
+date: today
+---
+
+::: {.lede}
+The Global shelf is for sources whose value spans countries — cross-border investigative consortia,
+multi-country monitoring datasets, and thematic trackers that don't belong to any single national file.
+:::
+
+This shelf is a placeholder for the pilot. Once a second and third country are in, global sources
+(e.g., cross-border investigative networks, conflict-event datasets, sanctions trackers) will be
+catalogued here using the same scoring rubric described in the [Methodology](../methodology.qmd).
