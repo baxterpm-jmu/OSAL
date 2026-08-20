@@ -10,18 +10,6 @@ effectively global (every sovereign state bar a couple with no domestic press, e
 only intentional omission is the United States. **382** of the sources are flagged as quantitative
 datasets.
 
-Built as a [Quarto](https://quarto.org) website in James Madison University brand colors
-(Madison Purple `#450084` / Gold `#CBB677`); deployable to GitHub Pages.
-
-## What the Lab is for
-
-The Lab favors sources a generalist would likely miss working only in English from mainstream outlets:
-in-country journalists and outlets (in any language), independent and exile investigative newsrooms,
-domestic think tanks, pollsters, and named experts, plus the authoritative official record (central
-banks, statistics agencies, legislatures) where that is the primary source. State-aligned, pro-war, and
-pro-government outlets are included only where they carry analytic value as the subject's own framing —
-and are clearly labeled so propaganda is never mistaken for reporting.
-
 ## The scoring rubric
 
 Each source is scored 1–5 on seven independent criteria; the **composite** is their mean.
