@@ -4,5 +4,18 @@
 !preview/*.html
 .DS_Store
 Thumbs.db
+/.github/
+
 
 **/*.quarto_ipynb
+
+# consolidated to one index.qmd per country — legacy sub-pages are no longer built or synced
+regions/**/security.qmd
+regions/**/economic.qmd
+regions/**/political.qmd
+regions/**/societal.qmd
+regions/**/datasets.qmd
+regions/_deltest.txt
+
+
+

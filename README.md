@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Open-Source Analysis Lab (OSAL)
 
 A curated, scored registry of in-country and expert open sources for regional and country analysis.
@@ -41,8 +41,6 @@ data/sources.csv                   the single data backbone (every page reads fr
 tools/recompute.py                 recomputes the composite column
 regions/<region>/<country>/        per-country pages
   index.qmd                        country overview (all-topic filterable table)
-  security.qmd economic.qmd political.qmd societal.qmd
-  datasets.qmd                     quantitative sources for that country
 global/index.qmd                   cross-country shelf (placeholder)
 preview/osal-preview.html          standalone visual preview (no build needed)
 .github/workflows/publish.yml      GitHub Pages deploy workflow

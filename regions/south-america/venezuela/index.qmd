@@ -2,7 +2,7 @@
 title: "Venezuela"
 subtitle: "South America · in-country and expert open sources"
 date: today
-toc: true
+toc: false
 ---
 
 ::: {.lede}
@@ -15,31 +15,12 @@ data = FileAttachment("../../../data/sources.csv").csv({typed: true})
 country = data.filter(d => d.country === "Venezuela")
 ```
 
-## At a glance
-
-```{ojs}
-//| echo: false
-html`<div class="topic-grid">
-  ${["Security","Economic","Political","Societal","General"].map(t => {
-    const n = country.filter(d => d.topic === t).length;
-    const href = t === "General" ? "index.html" : t.toLowerCase() + ".html";
-    return html`<a class="topic-card" href="${href}">
-      <div class="t-name">${t}</div>
-      <div class="t-count">${n} source${n===1?"":"s"}</div></a>`;
-  })}
-  <a class="topic-card" href="datasets.html">
-    <div class="t-name">Datasets</div>
-    <div class="t-count">${country.filter(d => d.is_dataset==="yes").length} quantitative sources</div></a>
-</div>`
-```
-
-## All Venezuela sources
-
 ```{ojs}
 //| echo: false
 viewof topicSel = Inputs.select(["All", ...Array.from(new Set(country.map(d => d.topic)))], {label: "Topic", value: "All"})
 viewof channelSel = Inputs.select(["All","Website","Social media"], {label: "Channel", value: "All"})
-viewof q = Inputs.text({label: "Search", placeholder: "name, type, note…", width: 280})
+viewof dsOnly = Inputs.toggle({label: "Datasets only", value: false})
+viewof q = Inputs.text({label: "Search", placeholder: "name, type, note…", width: 260})
 viewof sortBy = Inputs.select(new Map([
   ["Composite ↓","composite"], ["Accuracy ↓","accuracy"], ["Uniqueness ↓","uniqueness"],
   ["Timeliness ↓","timeliness"], ["Transparency ↓","transparency"], ["Verifiability ↓","verifiability"],
@@ -53,11 +34,17 @@ filtered = {
   let rows = country;
   if (topicSel !== "All") rows = rows.filter(d => d.topic === topicSel);
   if (channelSel !== "All") rows = rows.filter(d => d.channel === channelSel);
+  if (dsOnly) rows = rows.filter(d => d.is_dataset === "yes");
   if (q) { const s = q.toLowerCase();
     rows = rows.filter(d => (d.name+" "+d.source_type+" "+d.notes+" "+d.perspective+" "+d.platform).toLowerCase().includes(s)); }
   return rows.slice().sort((a,b) => sortBy === "name"
     ? (a.name < b.name ? -1 : a.name > b.name ? 1 : 0) : (b[sortBy]-a[sortBy]));
 }
+```
+
+```{ojs}
+//| echo: false
+html`<p class="count"><strong>${country.length}</strong> sources · <strong>${country.filter(d=>d.is_dataset==="yes").length}</strong> datasets · showing <strong>${filtered.length}</strong> — by topic: ${["Security","Economic","Political","Societal","General"].map(t => `${t} ${country.filter(d=>d.topic===t).length}`).join(" · ")}</p>`
 ```
 
 ```{ojs}
@@ -88,6 +75,6 @@ html`<div class="osal-scroll"><table class="osal">
 ## Reading the scores
 Seven criteria scored 1–5; composite is their mean. **Acc**uracy, **Uni**queness, **Tim**eliness,
 **Tra**nsparency/bias, **Ver**ifiability, **Acs** = accessibility, **Dep**th. Perspective labels are
-disclosure, not quality; the gold **dataset** tag marks quantitative sources (see [Datasets](datasets.qmd)).
-See the [Methodology](../../../methodology.qmd).
+disclosure, not quality; the gold **dataset** tag marks quantitative sources — toggle "Datasets only"
+to see just those. See the [Methodology](../../../methodology.qmd).
 :::
