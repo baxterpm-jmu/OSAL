@@ -30,7 +30,7 @@ $navbar-fg:    #efe9f6;
 
 $toc-color:    $slate;
 $font-size-root: 17px;
-$headings-font-weight: 600;
+$headings-font-weight: 300;
 
 /*-- scss:mixins --*/
 
@@ -61,9 +61,12 @@ h1.title {
   border-bottom: 4px solid $gold;
   box-shadow: 0 1px 6px rgba(69, 0, 132, 0.18);
 }
-.navbar .navbar-brand,
-.navbar .nav-link { color: $navbar-fg !important; }
-.navbar-brand { font-family: $font-family-serif; font-weight: 600; }
+.navbar .navbar-brand .navbar-title {
+  color: #cbb677 !important;   
+  font-size: 1.2rem;           // smaller wordmark (default ~1.25rem)
+}
+.navbar .nav-link { color: $navbar-fg !important; font-size: 0.85rem; }
+.navbar-brand { font-family: $font-family-serif; font-weight: 300; }
 
 // --- Lede / hero ------------------------------------------------------------
 .lede {
@@ -140,6 +143,7 @@ h1.title {
 .pill-dataset  { background: $gold; color: $purple-dark; font-weight: 600; }
 .pill-social   { background: #e2edf5; color: #1f4e6b; font-weight: 600; }
 .pill-web      { background: #ece7f3; color: $slate; }
+.pill-network  { background: #e6f3f0; color: #1f4e4b; font-weight: 600; }
 
 // --- Source note under name -------------------------------------------------
 .src-note { display: block; font-size: 0.78rem; color: $muted; margin-top: 0.25rem; line-height: 1.35; max-width: 34rem; }

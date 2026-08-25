@@ -1,11 +1,11 @@
 ---
-title: "Open-Source Analysis Lab"
+title: "Open-Source Analytics Lab"
 subtitle: "A curated, scored registry of in-country and expert open sources"
 date: today
 ---
 
 ::: {.lede}
-The Open-Source Analysis Lab (OSAL) collects primary and expert open sources that offer distinctive
+The Open-Source Analytics Lab (OSAL) collects primary and expert open sources that offer distinctive
 insight into a country — reporting by people inside the country (in any language), independent
 investigative outlets, in-country think tanks, pollsters, and subject-matter experts. Every source is
 scored on seven criteria so an analyst can judge quickly what a source is worth. See the
@@ -22,7 +22,7 @@ db = FileAttachment("data/sources.csv").csv({typed: true})
 regionFolder = ({
   "Europe": "europe", "North Africa & Middle East": "mena",
   "Asia": "asia", "Sub-Saharan Africa": "sub-saharan-africa", "South America": "south-america",
-  "North & Central America": "north-central-america", "Caribbean": "caribbean", "Oceania": "oceania"
+  "North & Central America": "north-central-america", "Caribbean": "caribbean", "Oceania": "oceania", "Global": "global"
 })
 
 slugify = function(c){

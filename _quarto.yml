@@ -4,11 +4,10 @@ project:
   render:
     - "index.qmd"
     - "methodology.qmd"
-    - "global/index.qmd"
     - "regions/*/*/index.qmd"
 
 website:
-  title: "Open-Source Analysis Lab"
+  title: "Open-Source Analytics Lab"
   description: "A curated, scored registry of in-country and expert open sources for regional analysis."
   site-url: "https://baxterpm-jmu.github.io/osal/"
   repo-url: "https://github.com/baxterpm-jmu/osal"
@@ -22,7 +21,7 @@ website:
       - text: "Methodology"
         href: methodology.qmd
       - text: "Global Datasets"
-        href: global/index.qmd
+        href: regions/global/global/index.qmd
       - text: "Asia"
         menu:
           - text: "Afghanistan"
@@ -93,34 +92,7 @@ website:
             href: regions/asia/uzbekistan/index.qmd
           - text: "Vietnam"
             href: regions/asia/vietnam/index.qmd
-      - text: "Caribbean"
-        menu:
-          - text: "Antigua and Barbuda"
-            href: regions/caribbean/antigua-and-barbuda/index.qmd
-          - text: "Bahamas"
-            href: regions/caribbean/bahamas/index.qmd
-          - text: "Barbados"
-            href: regions/caribbean/barbados/index.qmd
-          - text: "Cuba"
-            href: regions/caribbean/cuba/index.qmd
-          - text: "Dominica"
-            href: regions/caribbean/dominica/index.qmd
-          - text: "Dominican Republic"
-            href: regions/caribbean/dominican-republic/index.qmd
-          - text: "Grenada"
-            href: regions/caribbean/grenada/index.qmd
-          - text: "Haiti"
-            href: regions/caribbean/haiti/index.qmd
-          - text: "Jamaica"
-            href: regions/caribbean/jamaica/index.qmd
-          - text: "Saint Kitts and Nevis"
-            href: regions/caribbean/saint-kitts-and-nevis/index.qmd
-          - text: "Saint Lucia"
-            href: regions/caribbean/saint-lucia/index.qmd
-          - text: "Saint Vincent and the Grenadines"
-            href: regions/caribbean/saint-vincent-and-the-grenadines/index.qmd
-          - text: "Trinidad and Tobago"
-            href: regions/caribbean/trinidad-and-tobago/index.qmd
+
       - text: "Europe"
         menu:
           - text: "Albania"
@@ -213,24 +185,51 @@ website:
             href: regions/europe/united-kingdom/index.qmd
       - text: "North & Central America"
         menu:
+          - text: "Antigua and Barbuda"            
+            href: regions/caribbean/antigua-and-barbuda/index.qmd
+          - text: "Bahamas"
+            href: regions/caribbean/bahamas/index.qmd
+          - text: "Barbados"
+            href: regions/caribbean/barbados/index.qmd
           - text: "Belize"
             href: regions/north-central-america/belize/index.qmd
           - text: "Canada"
             href: regions/north-central-america/canada/index.qmd
           - text: "Costa Rica"
             href: regions/north-central-america/costa-rica/index.qmd
+          - text: "Cuba"
+            href: regions/caribbean/cuba/index.qmd
+          - text: "Dominica"
+            href: regions/caribbean/dominica/index.qmd
+          - text: "Dominican Republic"
+            href: regions/caribbean/dominican-republic/index.qmd
           - text: "El Salvador"
             href: regions/north-central-america/el-salvador/index.qmd
+          - text: "Grenada"
+            href: regions/caribbean/grenada/index.qmd
           - text: "Guatemala"
             href: regions/north-central-america/guatemala/index.qmd
+          - text: "Haiti"
+            href: regions/caribbean/haiti/index.qmd
           - text: "Honduras"
             href: regions/north-central-america/honduras/index.qmd
+          - text: "Jamaica"
+            href: regions/caribbean/jamaica/index.qmd
           - text: "Mexico"
             href: regions/north-central-america/mexico/index.qmd
           - text: "Nicaragua"
             href: regions/north-central-america/nicaragua/index.qmd
           - text: "Panama"
             href: regions/north-central-america/panama/index.qmd
+          - text: "Saint Kitts and Nevis"
+            href: regions/caribbean/saint-kitts-and-nevis/index.qmd
+          - text: "Saint Lucia"
+            href: regions/caribbean/saint-lucia/index.qmd
+          - text: "Saint Vincent and the Grenadines"
+            href: regions/caribbean/saint-vincent-and-the-grenadines/index.qmd
+          - text: "Trinidad and Tobago"
+            href: regions/caribbean/trinidad-and-tobago/index.qmd
+
       - text: "North Africa & Middle East"
         menu:
           - text: "Algeria"

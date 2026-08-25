@@ -15,7 +15,7 @@ catalogued here using the same scoring rubric described in the [Methodology](../
 
 ```{ojs}
 //| echo: false
-data = FileAttachment("../../../data/global.csv").csv({typed: true})
+data = FileAttachment("../../../data/sources.csv").csv({typed: true})
 country = data.filter(d => d.country === "Global")
 ```
 
@@ -24,6 +24,7 @@ country = data.filter(d => d.country === "Global")
 viewof topicSel = Inputs.select(["All", ...Array.from(new Set(country.map(d => d.topic)))], {label: "Topic", value: "All"})
 viewof channelSel = Inputs.select(["All","Website","Social media"], {label: "Channel", value: "All"})
 viewof dsOnly = Inputs.toggle({label: "Datasets only", value: false})
+viewof netOnly = Inputs.toggle({label: "Network data", value: false})
 viewof q = Inputs.text({label: "Search", placeholder: "name, type, note…", width: 260})
 viewof sortBy = Inputs.select(new Map([
   ["Composite ↓","composite"], ["Accuracy ↓","accuracy"], ["Uniqueness ↓","uniqueness"],
@@ -39,6 +40,7 @@ filtered = {
   if (topicSel !== "All") rows = rows.filter(d => d.topic === topicSel);
   if (channelSel !== "All") rows = rows.filter(d => d.channel === channelSel);
   if (dsOnly) rows = rows.filter(d => d.is_dataset === "yes");
+  if (netOnly) rows = rows.filter(d => d.is_network === "yes");
   if (q) { const s = q.toLowerCase();
     rows = rows.filter(d => (d.name+" "+d.source_type+" "+d.notes+" "+d.perspective+" "+d.platform).toLowerCase().includes(s)); }
   return rows.slice().sort((a,b) => sortBy === "name"
@@ -59,7 +61,7 @@ function scoreBadge(v){ return html`<span class="score score-${Math.round(v)}">$
 function compBadge(v){ return html`<span class="score composite score-${Math.round(v)}">${v}</span>`; }
 function pillClass(p){ return p.startsWith("Independent") ? "pill-indep" : p.startsWith("Pro-") ? "pill-prowar" : "pill-state"; }
 function srcCell(d){ return html`<td><a href="${d.url}" target="_blank" rel="noopener" class="src-name">${d.name}</a>
-  <span class="pill ${pillClass(d.perspective)}">${d.perspective}</span>${d.channel==="Social media" ? html`<span class="pill pill-social">${d.platform}</span>` : ""}${d.is_dataset==="yes" ? html`<span class="pill pill-dataset">dataset</span>` : ""}
+  <span class="pill ${pillClass(d.perspective)}">${d.perspective}</span>${d.channel==="Social media" ? html`<span class="pill pill-social">${d.platform}</span>` : ""}${d.is_dataset==="yes" ? html`<span class="pill pill-dataset">dataset</span>` : ""}${d.is_network==="yes" ? html`<span class="pill pill-network">network</span>` : ""}
   <span class="src-note">${d.notes}</span></td>`; }
 function scoreCells(d){ return html`${[d.accuracy,d.uniqueness,d.timeliness,d.transparency,d.verifiability,d.accessibility,d.depth].map(v=>html`<td class="num">${scoreBadge(v)}</td>`)}<td class="num">${compBadge(d.composite)}</td>`; }
 ```
