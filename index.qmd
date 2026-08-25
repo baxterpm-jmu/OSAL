@@ -20,7 +20,7 @@ db = FileAttachment("data/sources.csv").csv({typed: true})
 ```{ojs}
 //| echo: false
 regionFolder = ({
-  "Eurasia": "eurasia", "Europe": "europe", "North Africa & Middle East": "mena",
+  "Europe": "europe", "North Africa & Middle East": "mena",
   "Asia": "asia", "Sub-Saharan Africa": "sub-saharan-africa", "South America": "south-america",
   "North & Central America": "north-central-america", "Caribbean": "caribbean", "Oceania": "oceania"
 })

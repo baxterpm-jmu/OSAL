@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-08-24">
+<meta name="dcterms.date" content="2026-08-25">
 
 <title>Open-Source Analysis Lab</title>
 <style>
@@ -75,7 +75,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-f5ca7dff53b0122084cd2eef953bd360.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-269e15b890c6bd64726f417574d93043.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9253ab55b1a151bebaaf010f2ecf471e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -134,6 +134,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li class="nav-item">
     <a class="nav-link" href="./methodology.html"> 
 <span class="menu-text">Methodology</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./global/index.html"> 
+<span class="menu-text">Global Datasets</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-asia" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -338,21 +342,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-eurasia" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Eurasia</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-eurasia">    
-        <li>
-    <a class="dropdown-item" href="./regions/eurasia/russia/index.html">
- <span class="dropdown-text">Russia</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./regions/eurasia/ukraine/index.html">
- <span class="dropdown-text">Ukraine</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-europe" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Europe</span>
     </a>
@@ -494,6 +483,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="dropdown-text">Romania</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="./regions/europe/russia/index.html">
+ <span class="dropdown-text">Russia</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="./regions/europe/san-marino/index.html">
  <span class="dropdown-text">San Marino</span></a>
   </li>  
@@ -520,6 +513,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li>
     <a class="dropdown-item" href="./regions/europe/switzerland/index.html">
  <span class="dropdown-text">Switzerland</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./regions/europe/ukraine/index.html">
+ <span class="dropdown-text">Ukraine</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./regions/europe/united-kingdom/index.html">
@@ -981,7 +978,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/hatterassolutions/osal"> <i class="bi bi-github" role="img" aria-label="GitHub">
+    <a class="nav-link" href="https://github.com/baxterpm-jmu/osal"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -1016,7 +1013,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 24, 2026</p>
+      <p class="date">August 25, 2026</p>
     </div>
   </div>
   
@@ -1041,7 +1038,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="22" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 21;"><span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>regionFolder <span class="op">=</span> ({</span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Eurasia"</span><span class="op">:</span> <span class="st">"eurasia"</span><span class="op">,</span> <span class="st">"Europe"</span><span class="op">:</span> <span class="st">"europe"</span><span class="op">,</span> <span class="st">"North Africa &amp; Middle East"</span><span class="op">:</span> <span class="st">"mena"</span><span class="op">,</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Europe"</span><span class="op">:</span> <span class="st">"europe"</span><span class="op">,</span> <span class="st">"North Africa &amp; Middle East"</span><span class="op">:</span> <span class="st">"mena"</span><span class="op">,</span></span>
 <span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Asia"</span><span class="op">:</span> <span class="st">"asia"</span><span class="op">,</span> <span class="st">"Sub-Saharan Africa"</span><span class="op">:</span> <span class="st">"sub-saharan-africa"</span><span class="op">,</span> <span class="st">"South America"</span><span class="op">:</span> <span class="st">"south-america"</span><span class="op">,</span></span>
 <span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  <span class="st">"North &amp; Central America"</span><span class="op">:</span> <span class="st">"north-central-america"</span><span class="op">,</span> <span class="st">"Caribbean"</span><span class="op">:</span> <span class="st">"caribbean"</span><span class="op">,</span> <span class="st">"Oceania"</span><span class="op">:</span> <span class="st">"oceania"</span></span>
 <span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>})</span>
@@ -1137,7 +1134,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImRiID0gRmlsZUF0dGFjaG1lbnQoXCJkYXRhL3NvdXJjZXMuY3N2XCIpLmNzdih7dHlwZWQ6IHRydWV9KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoicmVnaW9uRm9sZGVyID0gKHtcbiAgXCJFdXJhc2lhXCI6IFwiZXVyYXNpYVwiLCBcIkV1cm9wZVwiOiBcImV1cm9wZVwiLCBcIk5vcnRoIEFmcmljYSAmIE1pZGRsZSBFYXN0XCI6IFwibWVuYVwiLFxuICBcIkFzaWFcIjogXCJhc2lhXCIsIFwiU3ViLVNhaGFyYW4gQWZyaWNhXCI6IFwic3ViLXNhaGFyYW4tYWZyaWNhXCIsIFwiU291dGggQW1lcmljYVwiOiBcInNvdXRoLWFtZXJpY2FcIixcbiAgXCJOb3J0aCAmIENlbnRyYWwgQW1lcmljYVwiOiBcIm5vcnRoLWNlbnRyYWwtYW1lcmljYVwiLCBcIkNhcmliYmVhblwiOiBcImNhcmliYmVhblwiLCBcIk9jZWFuaWFcIjogXCJvY2VhbmlhXCJcbn0pXG5cbnNsdWdpZnkgPSBmdW5jdGlvbihjKXtcbiAgY29uc3QgbWFwID0ge1wiw7RcIjpcIm9cIixcIsOpXCI6XCJlXCIsXCLDrVwiOlwiaVwiLFwiw6NcIjpcImFcIixcIsOhXCI6XCJhXCIsXCLDp1wiOlwiY1wiLFwiw7ZcIjpcIm9cIixcIsO8XCI6XCJ1XCIsXCLEjVwiOlwiY1wiLFwixb5cIjpcInpcIixcIsWhXCI6XCJzXCIsXCImXCI6XCJhbmRcIn07XG4gIGxldCBzID0gYy50b0xvd2VyQ2FzZSgpLnJlcGxhY2UoL1vDtMOpw63Do8Ohw6fDtsO8xI3FvsWhJl0vZywgY2ggPT4gbWFwW2NoXSB8fCBjaCk7XG4gIHMgPSBzLnJlcGxhY2UoL1soKScuXS9nLCBcIlwiKS5yZXBsYWNlKC9bXmEtejAtOV0rL2csIFwiLVwiKS5yZXBsYWNlKC9eLSt8LSskL2csIFwiXCIpO1xuICByZXR1cm4gcztcbn1cblxuY291bnRyaWVzID0ge1xuICBjb25zdCBieU5hbWUgPSBuZXcgTWFwKCk7XG4gIGZvciAoY29uc3QgZCBvZiBkYikge1xuICAgIGlmICghYnlOYW1lLmhhcyhkLmNvdW50cnkpKSBieU5hbWUuc2V0KGQuY291bnRyeSwge25hbWU6IGQuY291bnRyeSwgcmVnaW9uOiBkLnJlZ2lvbiwgc291cmNlczogMCwgZGF0YXNldHM6IDB9KTtcbiAgICBjb25zdCBjID0gYnlOYW1lLmdldChkLmNvdW50cnkpO1xuICAgIGMuc291cmNlcyArPSAxO1xuICAgIGlmIChkLmlzX2RhdGFzZXQgPT09IFwieWVzXCIpIGMuZGF0YXNldHMgKz0gMTtcbiAgfVxuICByZXR1cm4gQXJyYXkuZnJvbShieU5hbWUudmFsdWVzKCkpXG4gICAgLm1hcChjID0+ICh7Li4uYywgaHJlZjogYHJlZ2lvbnMvJHtyZWdpb25Gb2xkZXJbYy5yZWdpb25dfS8ke3NsdWdpZnkoYy5uYW1lKX0vaW5kZXguaHRtbGB9KSlcbiAgICAuc29ydCgoYSwgYikgPT4gYS5uYW1lLmxvY2FsZUNvbXBhcmUoYi5uYW1lKSk7XG59XG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJ2aWV3b2YgcSA9IElucHV0cy50ZXh0KHtsYWJlbDogXCJGaWx0ZXIgY291bnRyaWVzXCIsIHBsYWNlaG9sZGVyOiBcInR5cGUgYSBjb3VudHJ5IG5hbWXigKZcIiwgd2lkdGg6IDI4MH0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTQiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJzaG93biA9IHEgPyBjb3VudHJpZXMuZmlsdGVyKGMgPT4gYy5uYW1lLnRvTG93ZXJDYXNlKCkuaW5jbHVkZXMocS50b0xvd2VyQ2FzZSgpKSkgOiBjb3VudHJpZXNcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Imh0bWxgPHAgY2xhc3M9XCJjb3VudFwiPkluZGV4aW5nIDxzdHJvbmc+JHtkYi5sZW5ndGh9PC9zdHJvbmc+IHNvdXJjZXMgYWNyb3NzIDxzdHJvbmc+JHtjb3VudHJpZXMubGVuZ3RofTwvc3Ryb25nPiBjb3VudHJpZXMg4oCUIDxzdHJvbmc+JHtzaG93bi5sZW5ndGh9PC9zdHJvbmc+IHNob3duLjwvcD5gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTYiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJodG1sYDxkaXYgY2xhc3M9XCJvc2FsLXNjcm9sbFwiPjx0YWJsZSBjbGFzcz1cIm9zYWxcIj5cbiAgPHRoZWFkPjx0cj5cbiAgICA8dGg+Q291bnRyeTwvdGg+XG4gICAgPHRoIGNsYXNzPVwibnVtXCI+U291cmNlczwvdGg+XG4gICAgPHRoIGNsYXNzPVwibnVtXCI+RGF0YXNldHM8L3RoPlxuICA8L3RyPjwvdGhlYWQ+XG4gIDx0Ym9keT5cbiAgICAke3Nob3duLm1hcChjID0+IGh0bWxgPHRyPlxuICAgICAgPHRkPjxhIGhyZWY9XCIke2MuaHJlZn1cIiBjbGFzcz1cInNyYy1uYW1lXCI+JHtjLm5hbWV9PC9hPjwvdGQ+XG4gICAgICA8dGQgY2xhc3M9XCJudW1cIj4ke2Muc291cmNlc308L3RkPlxuICAgICAgPHRkIGNsYXNzPVwibnVtXCI+JHtjLmRhdGFzZXRzfTwvdGQ+XG4gICAgPC90cj5gKX1cbiAgPC90Ym9keT5cbjwvdGFibGU+PC9kaXY+YFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdxJykifV19
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImRiID0gRmlsZUF0dGFjaG1lbnQoXCJkYXRhL3NvdXJjZXMuY3N2XCIpLmNzdih7dHlwZWQ6IHRydWV9KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoicmVnaW9uRm9sZGVyID0gKHtcbiAgXCJFdXJvcGVcIjogXCJldXJvcGVcIiwgXCJOb3J0aCBBZnJpY2EgJiBNaWRkbGUgRWFzdFwiOiBcIm1lbmFcIixcbiAgXCJBc2lhXCI6IFwiYXNpYVwiLCBcIlN1Yi1TYWhhcmFuIEFmcmljYVwiOiBcInN1Yi1zYWhhcmFuLWFmcmljYVwiLCBcIlNvdXRoIEFtZXJpY2FcIjogXCJzb3V0aC1hbWVyaWNhXCIsXG4gIFwiTm9ydGggJiBDZW50cmFsIEFtZXJpY2FcIjogXCJub3J0aC1jZW50cmFsLWFtZXJpY2FcIiwgXCJDYXJpYmJlYW5cIjogXCJjYXJpYmJlYW5cIiwgXCJPY2VhbmlhXCI6IFwib2NlYW5pYVwiXG59KVxuXG5zbHVnaWZ5ID0gZnVuY3Rpb24oYyl7XG4gIGNvbnN0IG1hcCA9IHtcIsO0XCI6XCJvXCIsXCLDqVwiOlwiZVwiLFwiw61cIjpcImlcIixcIsOjXCI6XCJhXCIsXCLDoVwiOlwiYVwiLFwiw6dcIjpcImNcIixcIsO2XCI6XCJvXCIsXCLDvFwiOlwidVwiLFwixI1cIjpcImNcIixcIsW+XCI6XCJ6XCIsXCLFoVwiOlwic1wiLFwiJlwiOlwiYW5kXCJ9O1xuICBsZXQgcyA9IGMudG9Mb3dlckNhc2UoKS5yZXBsYWNlKC9bw7TDqcOtw6PDocOnw7bDvMSNxb7FoSZdL2csIGNoID0+IG1hcFtjaF0gfHwgY2gpO1xuICBzID0gcy5yZXBsYWNlKC9bKCknLl0vZywgXCJcIikucmVwbGFjZSgvW15hLXowLTldKy9nLCBcIi1cIikucmVwbGFjZSgvXi0rfC0rJC9nLCBcIlwiKTtcbiAgcmV0dXJuIHM7XG59XG5cbmNvdW50cmllcyA9IHtcbiAgY29uc3QgYnlOYW1lID0gbmV3IE1hcCgpO1xuICBmb3IgKGNvbnN0IGQgb2YgZGIpIHtcbiAgICBpZiAoIWJ5TmFtZS5oYXMoZC5jb3VudHJ5KSkgYnlOYW1lLnNldChkLmNvdW50cnksIHtuYW1lOiBkLmNvdW50cnksIHJlZ2lvbjogZC5yZWdpb24sIHNvdXJjZXM6IDAsIGRhdGFzZXRzOiAwfSk7XG4gICAgY29uc3QgYyA9IGJ5TmFtZS5nZXQoZC5jb3VudHJ5KTtcbiAgICBjLnNvdXJjZXMgKz0gMTtcbiAgICBpZiAoZC5pc19kYXRhc2V0ID09PSBcInllc1wiKSBjLmRhdGFzZXRzICs9IDE7XG4gIH1cbiAgcmV0dXJuIEFycmF5LmZyb20oYnlOYW1lLnZhbHVlcygpKVxuICAgIC5tYXAoYyA9PiAoey4uLmMsIGhyZWY6IGByZWdpb25zLyR7cmVnaW9uRm9sZGVyW2MucmVnaW9uXX0vJHtzbHVnaWZ5KGMubmFtZSl9L2luZGV4Lmh0bWxgfSkpXG4gICAgLnNvcnQoKGEsIGIpID0+IGEubmFtZS5sb2NhbGVDb21wYXJlKGIubmFtZSkpO1xufVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidmlld29mIHEgPSBJbnB1dHMudGV4dCh7bGFiZWw6IFwiRmlsdGVyIGNvdW50cmllc1wiLCBwbGFjZWhvbGRlcjogXCJ0eXBlIGEgY291bnRyeSBuYW1l4oCmXCIsIHdpZHRoOiAyODB9KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC00IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoic2hvd24gPSBxID8gY291bnRyaWVzLmZpbHRlcihjID0+IGMubmFtZS50b0xvd2VyQ2FzZSgpLmluY2x1ZGVzKHEudG9Mb3dlckNhc2UoKSkpIDogY291bnRyaWVzXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTUiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJodG1sYDxwIGNsYXNzPVwiY291bnRcIj5JbmRleGluZyA8c3Ryb25nPiR7ZGIubGVuZ3RofTwvc3Ryb25nPiBzb3VyY2VzIGFjcm9zcyA8c3Ryb25nPiR7Y291bnRyaWVzLmxlbmd0aH08L3N0cm9uZz4gY291bnRyaWVzIOKAlCA8c3Ryb25nPiR7c2hvd24ubGVuZ3RofTwvc3Ryb25nPiBzaG93bi48L3A+YFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC02IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiaHRtbGA8ZGl2IGNsYXNzPVwib3NhbC1zY3JvbGxcIj48dGFibGUgY2xhc3M9XCJvc2FsXCI+XG4gIDx0aGVhZD48dHI+XG4gICAgPHRoPkNvdW50cnk8L3RoPlxuICAgIDx0aCBjbGFzcz1cIm51bVwiPlNvdXJjZXM8L3RoPlxuICAgIDx0aCBjbGFzcz1cIm51bVwiPkRhdGFzZXRzPC90aD5cbiAgPC90cj48L3RoZWFkPlxuICA8dGJvZHk+XG4gICAgJHtzaG93bi5tYXAoYyA9PiBodG1sYDx0cj5cbiAgICAgIDx0ZD48YSBocmVmPVwiJHtjLmhyZWZ9XCIgY2xhc3M9XCJzcmMtbmFtZVwiPiR7Yy5uYW1lfTwvYT48L3RkPlxuICAgICAgPHRkIGNsYXNzPVwibnVtXCI+JHtjLnNvdXJjZXN9PC90ZD5cbiAgICAgIDx0ZCBjbGFzcz1cIm51bVwiPiR7Yy5kYXRhc2V0c308L3RkPlxuICAgIDwvdHI+YCl9XG4gIDwvdGJvZHk+XG48L3RhYmxlPjwvZGl2PmBcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgncScpIn1dfQ==
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
@@ -1220,7 +1217,7 @@ window._ojs.runtime.interpretFromScriptTags();
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/hatterassolutions\.github\.io\/osal\/");
+        var filterRegex = new RegExp("https:\/\/baxterpm-jmu\.github\.io\/osal\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -1557,7 +1554,7 @@ window._ojs.runtime.interpretFromScriptTags();
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Scores are analyst assessments, updated continuously. Last built: August 24, 2026</p>
+<p>Scores are analyst assessments, updated continuously. Last built: August 25, 2026</p>
 </div>
   </div>
 </footer>

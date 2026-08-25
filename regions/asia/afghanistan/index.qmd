@@ -6,7 +6,7 @@ toc: false
 ---
 
 ::: {.lede}
-Open-source reporting and expert sources for Afghanistan, indexed for analysts: independent outlets (Etilaatroz, TOLOnews, KabulNow) alongside official data bodies and, where relevant, state media flagged for framing. This is a starter set of 5 sources — it can be deepened on request.
+Open-source reporting and expert sources for Afghanistan, indexed for analysts: independent outlets (Etilaatroz, TOLOnews, KabulNow) alongside official data bodies and, where relevant, state media flagged for framing. Given the country's ongoing conflict and political instability, some sources identified below may no longer be operating or accessible.
 :::
 
 ```{ojs}
