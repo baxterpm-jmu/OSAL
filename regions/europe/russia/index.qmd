@@ -51,6 +51,8 @@ filtered = {
 html`<p class="count"><strong>${country.length}</strong> sources · <strong>${country.filter(d=>d.is_dataset==="yes").length}</strong> datasets · showing <strong>${filtered.length}</strong> — by topic: ${["Security","Economic","Political","Societal","General"].map(t => `${t} ${country.filter(d=>d.topic===t).length}`).join(" · ")}</p>`
 ```
 
+
+
 ```{ojs}
 //| echo: false
 function scoreBadge(v){ return html`<span class="score score-${Math.round(v)}">${v}</span>`; }
@@ -66,11 +68,8 @@ function scoreCells(d){ return html`${[d.accuracy,d.uniqueness,d.timeliness,d.tr
 //| echo: false
 html`<div class="osal-scroll"><table class="osal">
   <thead><tr><th>Source</th><th>Topic</th>
-    <th class="num" title="Accuracy">Acc</th><th class="num" title="Uniqueness">Uni</th>
-    <th class="num" title="Timeliness">Tim</th><th class="num" title="Transparency & bias disclosure">Tra</th>
-    <th class="num" title="Verifiability">Ver</th><th class="num" title="Accessibility">Acs</th>
-    <th class="num" title="Analytical depth">Dep</th><th class="num" title="Composite — mean of the seven">Comp</th>
-  </tr></thead>
+    <th class="num" title="Accuracy | Uniqueness | Timeliness | Transparency & bias disclosure | Verifiability | Accessibility | Analytical depth | Composite">Acc | Uni | Tim | Tra | Ver | Acs | Dep | Comp</th>
+    </tr></thead>
   <tbody>${filtered.map(d => html`<tr>${srcCell(d)}<td>${d.topic}</td>${scoreCells(d)}</tr>`)}</tbody>
 </table></div>`
 ```

@@ -161,19 +161,23 @@ table.osal {
 }
 table.osal thead th {
   background: $purple;
-  color: #efe9f6;
+  color: #6709d3;
   font-family: $font-family-sans-serif;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.02em;   // tighter glyphs
   text-align: left;
-  padding: 0.5rem 0.55rem;
+  padding-left: 0;           // columns closer
+  padding-right: 0; 
   white-space: nowrap;
 }
-table.osal thead th.num { text-align: center; }
-table.osal tbody td { padding: 0.5rem 0.55rem; border-bottom: 1px solid $rule; vertical-align: top; }
-table.osal tbody td.num { text-align: center; }
+table.osal thead th.num { text-align: left; }
+table.osal tbody td { padding: 0.1rem 0.1rem; border-bottom: 1px solid $rule; vertical-align: top; }
+table.osal tbody td.num { text-align: left; }
 table.osal tbody tr:nth-child(even) { background: #faf8fc; }
 table.osal tbody tr:hover { background: #f0eaf7; }
-table.osal a { font-weight: 600; color: $purple; }
+table.osal a { font-weight: 700; color: $purple; }
+
+
 
 // --- Callouts / footer ------------------------------------------------------
 .callout { border-radius: 10px; }

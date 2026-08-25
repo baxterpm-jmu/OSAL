@@ -21,6 +21,8 @@ website:
         href: index.qmd
       - text: "Methodology"
         href: methodology.qmd
+      - text: "Global Datasets"
+        href: global/index.qmd
       - text: "Asia"
         menu:
           - text: "Afghanistan"
@@ -119,12 +121,6 @@ website:
             href: regions/caribbean/saint-vincent-and-the-grenadines/index.qmd
           - text: "Trinidad and Tobago"
             href: regions/caribbean/trinidad-and-tobago/index.qmd
-      - text: "Eurasia"
-        menu:
-          - text: "Russia"
-            href: regions/eurasia/russia/index.qmd
-          - text: "Ukraine"
-            href: regions/eurasia/ukraine/index.qmd
       - text: "Europe"
         menu:
           - text: "Albania"
@@ -195,6 +191,8 @@ website:
             href: regions/europe/portugal/index.qmd
           - text: "Romania"
             href: regions/europe/romania/index.qmd
+          - text: "Russia"
+            href: regions/europe/russia/index.qmd
           - text: "San Marino"
             href: regions/europe/san-marino/index.qmd
           - text: "Serbia"
@@ -209,6 +207,8 @@ website:
             href: regions/europe/sweden/index.qmd
           - text: "Switzerland"
             href: regions/europe/switzerland/index.qmd
+          - text: "Ukraine"
+            href: regions/europe/ukraine/index.qmd
           - text: "United Kingdom"
             href: regions/europe/united-kingdom/index.qmd
       - text: "North & Central America"
