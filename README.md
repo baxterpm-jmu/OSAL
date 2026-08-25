@@ -5,9 +5,7 @@ A curated, scored registry of in-country and expert open sources for regional an
 Every source is rated 1–5 on seven criteria so an analyst can judge quickly what it is worth.
 
 **4,800+ sources across 195 countries** in nine regions — Asia, Caribbean, Eurasia, Europe, North &
-Central America, North Africa & Middle East, Oceania, South America, and Sub-Saharan Africa. Coverage is
-effectively global (every sovereign state bar a couple with no domestic press, e.g. Vatican City); the
-only intentional omission is the United States. **382** of the sources are flagged as quantitative
+Central America, North Africa & Middle East, Oceania, South America, and Sub-Saharan Africa. The United States is omitted from this dataset at this time. **382** of the sources are flagged as quantitative
 datasets.
 
 ## The scoring rubric
