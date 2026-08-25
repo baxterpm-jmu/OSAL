@@ -5,8 +5,8 @@ project:
 website:
   title: "Open-Source Analysis Lab"
   description: "A curated, scored registry of in-country and expert open sources for regional analysis."
-  site-url: "https://hatterassolutions.github.io/osal/"
-  repo-url: "https://github.com/hatterassolutions/osal"
+  site-url: "https://baxterpm-jmu.github.io/osal/"
+  repo-url: "https://github.com/baxterpm-jmu/osal"
   page-navigation: true
   navbar:
     background: primary
@@ -426,7 +426,7 @@ website:
             href: regions/sub-saharan-africa/zimbabwe/index.qmd
     right:
       - icon: github
-        href: "https://github.com/hatterassolutions/osal"
+        href: "https://github.com/baxterpm-jmu/osal"
         aria-label: GitHub
   sidebar:
     - title: "Afghanistan"
