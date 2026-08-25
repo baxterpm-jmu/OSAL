@@ -1,11 +1,8 @@
 /.quarto/
 /_site/
-*.html
-!preview/*.html
 .DS_Store
 Thumbs.db
 /.github/
-
 
 **/*.quarto_ipynb
 
