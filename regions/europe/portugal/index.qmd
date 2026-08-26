@@ -1,12 +1,13 @@
 ---
 title: "Portugal"
 subtitle: "Europe · in-country and expert open sources"
-date: today
+date: "2026-08-25"
+date-format: "D MMMM YYYY"
 toc: false
 ---
 
 ::: {.lede}
-Open-source reporting and expert sources for Portugal, indexed for analysts: independent outlets (Público, Expresso, Observador) alongside official data bodies and, where relevant, state media flagged for framing. This is a starter set of 6 sources — it can be deepened on request.
+Open-source reporting and expert sources for Portugal, indexed for analysts: independent outlets (Público, Expresso, Observador) alongside official data bodies and, where relevant, state media flagged for framing.
 :::
 
 ```{ojs}

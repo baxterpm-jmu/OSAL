@@ -1,12 +1,13 @@
 ---
 title: "El Salvador"
 subtitle: "North & Central America · in-country and expert open sources"
-date: today
+date: "2026-08-25"
+date-format: "D MMMM YYYY"
 toc: false
 ---
 
 ::: {.lede}
-Open-source reporting and expert sources for El Salvador, indexed for analysts: independent outlets (El Faro, GatoEncerrado, Revista Factum) alongside official data bodies and, where relevant, state media flagged for framing. This is a starter set of 5 sources — it can be deepened on request.
+Open-source reporting and expert sources for El Salvador, indexed for analysts: independent outlets (El Faro, GatoEncerrado, Revista Factum) alongside official data bodies and, where relevant, state media flagged for framing.
 :::
 
 ```{ojs}

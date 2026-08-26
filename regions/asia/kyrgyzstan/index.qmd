@@ -1,12 +1,13 @@
 ---
 title: "Kyrgyzstan"
 subtitle: "Asia · in-country and expert open sources"
-date: today
+date: "2026-08-25"
+date-format: "D MMMM YYYY"
 toc: false
 ---
 
 ::: {.lede}
-Open-source reporting and expert sources for Kyrgyzstan, indexed for analysts: independent outlets (Kloop, Kaktus Media, 24.kg) alongside official data bodies and, where relevant, state media flagged for framing. This is a starter set of 4 sources — it can be deepened on request.
+Open-source reporting and expert sources for Kyrgyzstan, indexed for analysts: independent outlets (Kloop, Kaktus Media, 24.kg) alongside official data bodies and, where relevant, state media flagged for framing.
 :::
 
 ```{ojs}

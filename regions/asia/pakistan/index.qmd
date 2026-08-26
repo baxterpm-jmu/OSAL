@@ -1,12 +1,13 @@
 ---
 title: "Pakistan"
 subtitle: "Asia · in-country and expert open sources"
-date: today
+date: "2026-08-25"
+date-format: "D MMMM YYYY"
 toc: false
 ---
 
 ::: {.lede}
-Open-source reporting and expert sources for Pakistan, indexed for analysts: independent outlets (Dawn, Soch Fact Check, The News International) alongside official data bodies and, where relevant, state media flagged for framing. This is a starter set of 7 sources — it can be deepened on request.
+Open-source reporting and expert sources for Pakistan, indexed for analysts: independent outlets (Dawn, Soch Fact Check, The News International) alongside official data bodies and, where relevant, state media flagged for framing.
 :::
 
 ```{ojs}

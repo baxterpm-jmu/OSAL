@@ -1,12 +1,13 @@
 ---
 title: "Ghana"
 subtitle: "Sub-Saharan Africa · in-country and expert open sources"
-date: today
+date: "2026-08-25"
+date-format: "D MMMM YYYY"
 toc: false
 ---
 
 ::: {.lede}
-Open-source reporting and expert sources for Ghana, indexed for analysts: independent outlets (The Fourth Estate, Afrobarometer, CDD-Ghana) alongside official data bodies and, where relevant, state media flagged for framing. This is a starter set of 8 sources — it can be deepened on request.
+Open-source reporting and expert sources for Ghana, indexed for analysts: independent outlets (The Fourth Estate, Afrobarometer, CDD-Ghana) alongside official data bodies and, where relevant, state media flagged for framing.
 :::
 
 ```{ojs}

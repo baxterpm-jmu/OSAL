@@ -1,12 +1,13 @@
 ---
 title: "Australia"
 subtitle: "Oceania · in-country and expert open sources"
-date: today
+date: "2026-08-25"
+date-format: "D MMMM YYYY"
 toc: false
 ---
 
 ::: {.lede}
-Open-source reporting and expert sources for Australia, indexed for analysts: independent outlets (The Interpreter (Lowy Institute), The Conversation, Guardian Australia) alongside official data bodies and, where relevant, state media flagged for framing. This is a starter set of 10 sources — it can be deepened on request.
+Open-source reporting and expert sources for Australia, indexed for analysts: independent outlets (The Interpreter (Lowy Institute), The Conversation, Guardian Australia) alongside official data bodies and, where relevant, state media flagged for framing.
 :::
 
 ```{ojs}

@@ -1,7 +1,8 @@
 ---
 title: "Czechia"
 subtitle: "Europe · in-country and expert open sources"
-date: today
+date: "2026-08-25"
+date-format: "D MMMM YYYY"
 toc: false
 ---
 

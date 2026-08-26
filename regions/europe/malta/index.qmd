@@ -1,12 +1,13 @@
 ---
 title: "Malta"
 subtitle: "Europe · in-country and expert open sources"
-date: today
+date: "2026-08-25"
+date-format: "D MMMM YYYY"
 toc: false
 ---
 
 ::: {.lede}
-Open-source reporting and expert sources for Malta, indexed for analysts: independent outlets (The Shift News, Times of Malta, MaltaToday) alongside official data bodies and, where relevant, state media flagged for framing. This is a starter set of 5 sources — it can be deepened on request.
+Open-source reporting and expert sources for Malta, indexed for analysts: independent outlets (The Shift News, Times of Malta, MaltaToday) alongside official data bodies and, where relevant, state media flagged for framing.
 :::
 
 ```{ojs}
