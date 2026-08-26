@@ -13,7 +13,7 @@ Open-source reporting and expert sources for Côte d'Ivoire, indexed for analyst
 ```{ojs}
 //| echo: false
 data = FileAttachment("../../../data/sources.csv").csv({typed: true})
-country = data.filter(d => d.country === "C\u00f4te d'Ivoire")
+country = data.filter(d => d.country === "Cote d'Ivoire")
 ```
 
 ```{ojs}

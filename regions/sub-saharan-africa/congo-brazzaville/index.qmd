@@ -13,7 +13,7 @@ Open-source reporting and expert sources for Congo (Brazzaville), indexed for an
 ```{ojs}
 //| echo: false
 data = FileAttachment("../../../data/sources.csv").csv({typed: true})
-country = data.filter(d => d.country === "Congo (Brazzaville)")
+country = data.filter(d => d.country === "Congo (Rep. of)")
 ```
 
 ```{ojs}

@@ -124,7 +124,8 @@ composite as "worse" — read the row.
 - **Perspective** — orientation: *Independent*, *Independent (exile)*, *State / official*, *Pro-war / state-aligned*. This is disclosure, not a score.
 - **Language** — publication language(s); the Lab is deliberately not English-only.
 - **Channel** — *Website* (a formal, standalone outlet or organization) vs *Social media* (an individual or account published on a platform such as Telegram, Substack, or X). Filterable on every page; social accounts carry a platform tag. The distinction matters for tradecraft: an individual's channel and an institution's website warrant different handling even at the same score.
-- **Dataset flag** — marks *quantitative* sources (official statistics, polling series, order-of-battle databases, OSINT loss trackers). Flagged sources are gathered on the [Datasets](regions/eurasia/russia/datasets.qmd) shelf in addition to their topic page.
+- **Dataset flag** — marks *quantitative* sources (official statistics, polling series, order-of-battle databases, OSINT loss trackers). 
+- **Network flag** — marks *quantitative* sources that are set up in dyadic format, allowing for network analysis approaches. 
 
 ## Revision
 
